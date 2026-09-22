@@ -1,0 +1,4338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Adnan Auto Pricing Studio — instant price estimates for BMW, Honda, Mercedes-Benz, Range Rover, Hyundai and Toyota models.">
+<title>Adnan Auto — Car Pricing Studio</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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t/rwT7tcPx46xAJgmktKv/zcat0PINRqtuz84IMPP//bP55do2RcodbDqyiZXBmAZLMl9S4rK/0RwFGbLWlcAFuZTygTMMTLeLHtEMyOtOiA8XFXqgI16zy4HwD8zmZLCrs2NAyfNzVuD7X2eNfhco5QuvOGm0whj6dlTFvXUF8b7nIKt+jc8EEN9bUXRURGHeN5a6UvbriS1T4txta74UrRl0zC3fkKAILgYOpq17EDoiZK2iylsrmGHRcfL2+qqIDBJhlt2yuvE/655+b3HHLByPNHXWmVBkRNVLOiu/XX1VRXzXY5hQvMFr7Z5RTU38GZLXxDRGSUum+/eV/N7sfMFv7HiMiobXurd69UkjxsY30dvtv9q/o7zJIk/zRj1j1fAAhZPC2jpffkxB4sy/zfxg0bMwBEJYxPeEn/HXSKZ3/t/v0nNNYKUQMHygDMm7dUbjp+5OiOXn16hwCQjx85Kk5MnHg3Wk9aMqR2/358+832dt1cJUmmFqBE2GxJvQFEJSZOAoCdd82YM+veWTNuGJcQP2L8+IQEAL8Mjhl6O4AQ5YCMS8wWfnN0TGyhKtwAepTY7XVp6RmNuo/j0LY+3p1FNnTDNRlwEu6uqAD8ec+iwgK1/bLRMgcLAHW167B1m6PNCzdVVMgeapf1TRd93Y3HKdZbTL4xvsdlw+IlABgXH4+LLSbEJk5Rx6FRP/lqqqtuioiMWgugR0N97c2A4f5yBkBzRGTUegBHFZe5jRAYlWjWVFc95hSEW9B63pxH76Gxvs7I0od88/Oe9WazeadixZtdLteEERcOuSwscoBL+z0Hxwy9H60nPfduqK+9Dq1bhPdGx8R+rF5TVFhw3obp08XFgvM3D2N/8t7ICxeyylJWGzdc457LgbSoIrq/Amj3d8rJzmrzvYyKHnZ8+C73k7PltO+fnJIiWyx/k//0cKP6Wn8moSknO0vOzctnlL/FII6zXoG1dIGxVrPgJw/PFAQHY3n2b4zzsUfVAhRJK9zu7gdBCqCr/0aPp6YaFV8UFRZwaekZkiA4UGK3u92NpfSNkzy8d4cIi1KSrYZfDDw0HtH8drbEbmfQ2lJL1D9PLjhBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEB3A/weqhytrDt1stQAAAABJRU5ErkJggg==">
+<style id="adnan-redesign">:root {
+  --bg:#070a12;
+  --panel:rgba(16,22,39,.88);
+  --panel-solid:#11182a;
+  --panel-2:rgba(255,255,255,.055);
+  --border:rgba(255,255,255,.10);
+  --text:#f7f9ff;
+  --muted:#9da9c2;
+  --accent:#78a9ff;
+  --accent-2:#9a88ff;
+  --success:#57d7a8;
+  --danger:#ff7088;
+  --shadow:0 30px 90px rgba(0,0,0,.40)
+}
+* {
+  box-sizing:border-box
+}
+html {
+  scroll-behavior:smooth
+}
+body {
+  max-width:1080px;
+  min-height:100vh;
+  margin:0 auto;
+  padding:28px 22px 60px;
+  color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  background:
+  radial-gradient(circle at 5% 0%,rgba(77,139,255,.19),transparent 30%),
+  radial-gradient(circle at 96% 4%,rgba(151,117,255,.16),transparent 27%),
+  linear-gradient(145deg,#060912,#0b1120 55%,#070a12);
+}
+body:before {
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.45;
+  background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);
+  background-size:36px 36px;
+  mask-image:linear-gradient(to bottom,#000,transparent 80%)
+}
+button,input {
+  font:inherit
+}
+button {
+  border:0
+}
+#brandScreen,.brand-panel {
+  position:relative;
+  background:linear-gradient(145deg,rgba(19,27,47,.94),rgba(11,17,31,.94));
+  border:1px solid var(--border);
+  border-radius:30px;
+  padding:28px;
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(20px);
+}
+.app-topbar {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  margin-bottom:30px
+}
+.brand-mark {
+  display:flex;
+  align-items:center;
+  gap:11px;
+  font-weight:850;
+  letter-spacing:.2px
+}
+.brand-mark small {
+  display:block;
+  font-size:8px;
+  letter-spacing:1.8px;
+  color:#72809c;
+  margin-top:1px
+}
+.mark {
+  width:60px;
+  height:40px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  background:rgba(255,255,255,.055);
+  border:1px solid var(--border);
+  box-shadow:0 9px 22px rgba(0,0,0,.22);
+  padding:3px;
+  overflow:hidden
+}
+.mark img {
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block
+}
+body.light-mode .mark {
+  background:rgba(15,23,42,.04);
+  box-shadow:0 9px 22px rgba(30,40,70,.10)
+}
+.top-actions {
+  display:flex;
+  align-items:center;
+  gap:9px
+}
+.status-pill {
+  font-size:11px;
+  color:#b9c5de;
+  border:1px solid var(--border);
+  padding:8px 11px;
+  border-radius:999px;
+  background:rgba(255,255,255,.035)
+}
+.live-dot {
+  display:inline-block;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--success);
+  box-shadow:0 0 10px var(--success);
+  margin-right:6px
+}
+.icon-btn {
+  width:38px;
+  height:38px;
+  border-radius:12px;
+  color:#d9e1f4;
+  background:rgba(255,255,255,.055);
+  border:1px solid var(--border);
+  cursor:pointer;
+  transition:.2s
+}
+.icon-btn:hover {
+  transform:translateY(-2px);
+  background:rgba(255,255,255,.09)
+}
+.hero {
+  min-height:330px;
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  align-items:center;
+  gap:20px;
+  padding:20px 16px 38px
+}
+.eyebrow {
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:1.8px;
+  color:#8ea0c5
+}
+.hero h1 {
+  font-size:clamp(42px,7vw,72px);
+  line-height:.98;
+  letter-spacing:-3.8px;
+  margin:12px 0 18px;
+  max-width:700px
+}
+.hero h1 span {
+  background:linear-gradient(90deg,#78a9ff,#b0a2ff);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent
+}
+.hero-copy>p {
+  max-width:600px;
+  color:var(--muted);
+  line-height:1.7;
+  font-size:16px;
+  margin:0
+}
+.hero-points {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:22px
+}
+.hero-points span {
+  padding:8px 11px;
+  border-radius:999px;
+  background:rgba(255,255,255,.045);
+  border:1px solid var(--border);
+  font-size:11px;
+  color:#c7d1e6
+}
+.hero-orb {
+  width:230px;
+  height:230px;
+  margin:0 auto;
+  position:relative;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(113,164,255,.20),rgba(113,164,255,.02) 58%,transparent 65%)
+}
+.hero-orb-col {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:16px
+}
+.orb-phone {
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  font-weight:800;
+  font-size:15px;
+  letter-spacing:.2px;
+  color:var(--text);
+  text-decoration:none;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.055);
+  padding:9px 18px;
+  border-radius:999px;
+  box-shadow:0 9px 22px rgba(0,0,0,.22);
+  transition:.2s;
+  white-space:nowrap
+}
+.orb-phone:hover {
+  transform:translateY(-2px);
+  background:rgba(255,255,255,.09)
+}
+body.light-mode .orb-phone {
+  background:rgba(15,23,42,.04);
+  box-shadow:0 9px 22px rgba(30,40,70,.10)
+}
+body.light-mode .orb-phone:hover {
+  background:rgba(15,23,42,.07)
+}
+.orb-ring {
+  position:absolute;
+  border:1px solid rgba(120,169,255,.24);
+  border-radius:50%;
+  animation:spin 14s linear infinite
+}
+.ring-1 {
+  inset:20px
+}
+.ring-2 {
+  inset:47px;
+  border-color:rgba(154,136,255,.25);
+  animation-direction:reverse;
+  animation-duration:10s
+}
+.orb-car {
+  width:116px;
+  height:116px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(255,255,255,.13);
+  background:linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.025));
+  box-shadow:0 20px 50px rgba(0,0,0,.3);
+  overflow:hidden
+}
+.orb-car img {
+  width:78%;
+  height:78%;
+  object-fit:contain;
+  display:block
+}
+@keyframes spin {
+  to {
+    transform:rotate(360deg)
+  }
+}
+.section-heading {
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:20px;
+  padding:0 16px 15px
+}
+.section-heading h2 {
+  margin:6px 0 0;
+  font-size:22px;
+  letter-spacing:-.5px
+}
+.brand-count {
+  font-size:11px;
+  color:#7f8da8;
+  border:1px solid var(--border);
+  padding:7px 10px;
+  border-radius:999px
+}
+.brand-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px
+}
+.brand-card {
+  position:relative;
+  min-height:185px;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  text-align:left;
+  padding:24px;
+  border:1px solid var(--border);
+  border-radius:22px;
+  background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.018));
+  color:var(--text);
+  cursor:pointer;
+  transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease,background .22s ease
+}
+.brand-card:before {
+  content:"";
+  position:absolute;
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(110,168,254,.16),transparent 68%);
+  top:-70px;
+  right:-45px
+}
+.brand-card:hover {
+  transform:translateY(-5px);
+  border-color:rgba(120,169,255,.42);
+  background:linear-gradient(145deg,rgba(110,168,254,.12),rgba(154,136,255,.045));
+  box-shadow:0 18px 42px rgba(0,0,0,.24)
+}
+.brand-content {
+  position:relative;
+  z-index:1
+}
+.logo-wrap {
+  width:64px;
+  height:64px;
+  margin-bottom:17px;
+  display:grid;
+  place-items:center;
+  border-radius:19px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.10);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 10px 22px rgba(0,0,0,.22);
+  transition:transform .25s cubic-bezier(.22,1,.36,1),box-shadow .25s ease
+}
+.brand-card:hover .logo-wrap {
+  transform:scale(1.06) rotate(-2deg);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 14px 28px rgba(0,0,0,.3)
+}
+.brand-logo {
+  width:42px;
+  height:42px;
+  display:block
+}
+.logo-bmw {
+  background:radial-gradient(circle at 30% 25%,rgba(61,124,255,.28),rgba(61,124,255,.05) 70%)
+}
+.logo-honda {
+  background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.16),rgba(255,255,255,.03) 70%)
+}
+.logo-mercedes {
+  background:radial-gradient(circle at 30% 25%,rgba(210,217,232,.20),rgba(210,217,232,.03) 70%)
+}
+.logo-rr {
+  background:radial-gradient(circle at 30% 25%,rgba(120,169,255,.22),rgba(120,169,255,.04) 70%)
+}
+.logo-hyundai {
+  background:radial-gradient(circle at 30% 25%,rgba(120,169,255,.22),rgba(120,169,255,.04) 70%)
+}
+.logo-toyota {
+  background:radial-gradient(circle at 30% 25%,rgba(255,90,90,.20),rgba(255,90,90,.04) 70%)
+}
+.brand-name {
+  display:block;
+  font-size:22px;
+  font-weight:800;
+  letter-spacing:-.6px
+}
+.brand-card small {
+  display:block;
+  margin-top:5px;
+  color:#8592ad;
+  font-size:11px
+}
+.card-arrow {
+  position:absolute;
+  right:20px;
+  bottom:18px;
+  font-size:20px;
+  color:#7484a3;
+  transition:.2s
+}
+.brand-card:hover .card-arrow {
+  color:#fff;
+  transform:translate(2px,-2px)
+}
+.tips-panel {
+  display:flex;
+  gap:13px;
+  align-items:flex-start;
+  margin-top:16px;
+  padding:16px 17px;
+  border:1px solid var(--border);
+  border-radius:17px;
+  background:rgba(255,255,255,.025)
+}
+.tip-icon {
+  width:32px;
+  height:32px;
+  border-radius:10px;
+  display:grid;
+  place-items:center;
+  background:rgba(120,169,255,.11);
+  color:#8fb5ff
+}
+.tips-panel strong {
+  font-size:12px
+}
+.tips-panel p {
+  margin:4px 0 0;
+  color:#7f8ca6;
+  font-size:11px;
+  line-height:1.55
+}
+.app-footer {
+  text-align:center;
+  color:#5f6c86;
+  font-size:10px;
+  margin-top:25px
+}
+.app-footer span {
+  margin:0 5px
+}
+.brand-panel {
+  display:none
+}
+.brand-panel.active {
+  display:block;
+  animation:panelIn .28s ease both
+}
+@keyframes panelIn {
+  from {
+    opacity:0;
+    transform:translateY(10px)
+  }
+  to {
+    opacity:1;
+    transform:none
+  }
+}
+.back-btn {
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:9px 13px;
+  margin-bottom:24px;
+  border:1px solid var(--border);
+  border-radius:11px;
+  color:#aab7d0;
+  background:rgba(255,255,255,.045);
+  cursor:pointer;
+  transition:.2s
+}
+.back-btn:hover {
+  color:#fff;
+  background:rgba(255,255,255,.09);
+  transform:translateX(-2px)
+}
+.panel-kicker {
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:1.6px;
+  color:#8295ba;
+  margin-bottom:8px
+}
+.panel-title {
+  margin:0 0 8px;
+  font-size:clamp(32px,5vw,46px);
+  letter-spacing:-1.8px
+}
+.panel-header {
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:18px
+}
+.panel-badge {
+  flex:none;
+  padding:7px 10px;
+  border-radius:999px;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.6px;
+  color:#cdd8f1;
+  background:rgba(110,168,254,.1);
+  border:1px solid rgba(110,168,254,.2)
+}
+.brand-panel>p {
+  color:var(--muted);
+  line-height:1.6;
+  margin:0 0 24px;
+  max-width:760px
+}
+.field-label {
+  display:block;
+  margin:17px 0 7px;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+  color:#8190ad
+}
+input {
+  display:block;
+  width:100%;
+  padding:15px 16px;
+  font-size:16px;
+  color:var(--text);
+  background:rgba(3,7,16,.56);
+  border:1px solid var(--border);
+  border-radius:13px;
+  outline:none;
+  transition:.2s
+}
+input::placeholder {
+  color:#5e6b85
+}
+input:focus {
+  border-color:rgba(120,169,255,.75);
+  box-shadow:0 0 0 4px rgba(120,169,255,.09);
+  background:rgba(3,7,16,.75)
+}
+.quick-chips {
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
+  margin-top:8px
+}
+.quick-chips button {
+  padding:6px 9px;
+  border-radius:999px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  color:#8794ad;
+  font-size:10px;
+  cursor:pointer
+}
+.quick-chips button:hover {
+  color:#fff;
+  border-color:rgba(120,169,255,.35)
+}
+.controls {
+  display:grid;
+  grid-template-columns:1.35fr 1fr 1fr;
+  gap:9px;
+  margin-top:20px
+}
+.controls button {
+  width:100%;
+  padding:12px 14px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  color:var(--text);
+  background:rgba(255,255,255,.055);
+  cursor:pointer;
+  transition:.18s
+}
+.controls button:first-child {
+  border:0;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  box-shadow:0 9px 25px rgba(93,113,220,.26);
+  font-weight:800
+}
+.controls button:hover {
+  transform:translateY(-2px);
+  background:rgba(255,255,255,.10)
+}
+.controls button:first-child:hover {
+  background:linear-gradient(135deg,#88baff,#aa9cff)
+}
+.output {
+  margin-top:18px;
+  min-height:75px;
+  padding:18px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:rgba(255,255,255,.028);
+  font-size:15px;
+  line-height:1.6
+}
+.output-hint {
+  color:#687590
+}
+.success {
+  color:var(--success)
+}
+.error {
+  color:var(--danger)
+}
+.price-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:9px;
+  margin-top:12px
+}
+.price-card {
+  padding:15px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.022))
+}
+.price-card .label {
+  font-size:10px;
+  color:#7f8ca7;
+  text-transform:uppercase;
+  letter-spacing:.8px
+}
+.price-card .value {
+  font-size:23px;
+  font-weight:850;
+  color:#fff;
+  margin-top:4px
+}
+.result-title {
+  font-size:11px;
+  color:#9aa8c2;
+  margin-bottom:8px
+}
+.result-title strong {
+  color:#fff;
+  font-size:16px
+}
+.history {
+  margin-top:18px;
+  font-size:13px;
+  border-top:1px solid var(--border);
+  padding-top:18px;
+  max-height:320px;
+  overflow-y:auto;
+  display:none
+}
+.history h3 {
+  margin:0 0 12px;
+  color:#dce4f8;
+  font-size:13px
+}
+.history-item {
+  margin-bottom:8px;
+  padding:12px 13px;
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:11px;
+  background:rgba(255,255,255,.03);
+  transition:.15s
+}
+.history-item:hover {
+  border-color:rgba(120,169,255,.25)
+}
+hr {
+  border:0;
+  border-top:1px solid var(--border);
+  margin:15px 0
+}
+/* ===== AI Advisor ===== */
+.advisor-fab {
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  width:62px;
+  height:62px;
+  border-radius:50%;
+  border:0;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:grid;
+  place-items:center;
+  font-size:26px;
+  cursor:pointer;
+  box-shadow:0 14px 34px rgba(93,113,220,.45);
+  z-index:999;
+  transition:.25s
+}
+.advisor-fab:hover {
+  transform:scale(1.07) translateY(-2px)
+}
+.advisor-fab-ring {
+  position:absolute;
+  inset:-7px;
+  border-radius:50%;
+  border:2px solid rgba(120,169,255,.5);
+  pointer-events:none;
+  animation:advisorPulse 2.4s infinite
+}
+@keyframes advisorPulse {
+  0% {
+    transform:scale(1);
+    opacity:.75
+  }
+  100% {
+    transform:scale(1.4);
+    opacity:0
+  }
+}
+.advisor-fab-badge {
+  position:absolute;
+  top:-3px;
+  right:-3px;
+  background:#ff5a5a;
+  color:#fff;
+  font-size:10px;
+  font-weight:800;
+  padding:3px 6px;
+  border-radius:999px;
+  box-shadow:0 4px 10px rgba(255,90,90,.45)
+}
+.advisor-tooltip {
+  position:fixed;
+  right:98px;
+  bottom:40px;
+  background:var(--panel-solid);
+  border:1px solid var(--border);
+  padding:11px 15px;
+  border-radius:13px;
+  font-size:13px;
+  color:var(--text);
+  box-shadow:var(--shadow);
+  z-index:998;
+  max-width:210px;
+  animation:advisorTooltipIn .3s ease
+}
+.advisor-tooltip::after {
+  content:'';
+  position:absolute;
+  right:-6px;
+  bottom:20px;
+  width:12px;
+  height:12px;
+  background:var(--panel-solid);
+  border-right:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  transform:rotate(-45deg)
+}
+.advisor-tooltip button {
+  position:absolute;
+  top:4px;
+  right:6px;
+  background:none;
+  border:0;
+  color:var(--muted);
+  font-size:14px;
+  cursor:pointer;
+  padding:2px 5px
+}
+@keyframes advisorTooltipIn {
+  from {
+    opacity:0;
+    transform:translateY(6px)
+  }
+  to {
+    opacity:1;
+    transform:translateY(0)
+  }
+}
+.advisor-popup {
+  position:fixed;
+  right:24px;
+  bottom:100px;
+  width:380px;
+  max-width:92vw;
+  height:560px;
+  max-height:75vh;
+  background:var(--panel-solid);
+  border:1px solid var(--border);
+  border-radius:22px;
+  box-shadow:0 30px 70px rgba(0,0,0,.5);
+  z-index:1000;
+  display:none;
+  flex-direction:column;
+  overflow:hidden;
+  transform-origin:bottom right;
+  animation:advisorPopIn .22s ease
+}
+@keyframes advisorPopIn {
+  from {
+    opacity:0;
+    transform:scale(.88) translateY(14px)
+  }
+  to {
+    opacity:1;
+    transform:scale(1) translateY(0)
+  }
+}
+.advisor-popup-header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding:16px 18px;
+  border-bottom:1px solid var(--border);
+  background:linear-gradient(120deg,rgba(120,169,255,.14),rgba(154,136,255,.07))
+}
+.advisor-popup-header h4 {
+  margin:0;
+  font-size:15px;
+  letter-spacing:-.2px
+}
+.advisor-popup-header .sub {
+  display:block;
+  font-size:11px;
+  color:var(--muted);
+  margin-top:2px
+}
+.advisor-popup-close {
+  flex:none;
+  width:30px;
+  height:30px;
+  border-radius:9px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.05);
+  color:var(--text);
+  cursor:pointer;
+  display:grid;
+  place-items:center;
+  font-size:15px
+}
+.advisor-popup-close:hover {
+  background:rgba(255,255,255,.1)
+}
+.advisor-popup .chat-shell {
+  flex:1;
+  border:0;
+  border-radius:0;
+  height:auto
+}
+@media(max-width:700px) {
+  .advisor-popup {
+    right:10px;
+    left:10px;
+    bottom:90px;
+    width:auto;
+    max-width:none;
+    height:70vh;
+    max-height:70vh
+  }
+  .advisor-fab {
+    right:16px;
+    bottom:16px
+  }
+  .advisor-tooltip {
+    right:16px;
+    bottom:92px;
+    max-width:calc(100vw - 96px)
+  }
+}
+.chat-shell {
+  display:flex;
+  flex-direction:column;
+  height:min(640px,70vh);
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:rgba(255,255,255,.02);
+  overflow:hidden
+}
+.chat-messages {
+  flex:1;
+  overflow-y:auto;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:12px
+}
+.chat-bubble {
+  max-width:82%;
+  padding:13px 15px;
+  border-radius:16px;
+  font-size:14.5px;
+  line-height:1.55;
+  white-space:pre-wrap
+}
+.chat-bubble.bot {
+  align-self:flex-start;
+  background:rgba(255,255,255,.06);
+  border:1px solid var(--border);
+  border-bottom-left-radius:5px
+}
+.chat-bubble.user {
+  align-self:flex-end;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#0b1020;
+  font-weight:600;
+  border-bottom-right-radius:5px
+}
+.chat-bubble.typing {
+  align-self:flex-start;
+  display:flex;
+  gap:5px;
+  padding:15px 17px
+}
+.chat-bubble.typing span {
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#9da9c2;
+  animation:chatTyping 1.1s infinite ease-in-out
+}
+.chat-bubble.typing span:nth-child(2) {
+  animation-delay:.15s
+}
+.chat-bubble.typing span:nth-child(3) {
+  animation-delay:.3s
+}
+@keyframes chatTyping {
+  0%,60%,100% {
+    opacity:.25;
+    transform:translateY(0)
+  }
+  30% {
+    opacity:1;
+    transform:translateY(-3px)
+  }
+}
+.chat-suggestions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  padding:0 20px 14px
+}
+.chat-suggestions button {
+  padding:8px 13px;
+  border-radius:999px;
+  font-size:12.5px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.04);
+  color:#c7d1e6;
+  cursor:pointer;
+  transition:.18s
+}
+.chat-suggestions button:hover {
+  border-color:rgba(120,169,255,.5);
+  color:#fff
+}
+.chat-input-row {
+  display:flex;
+  gap:10px;
+  padding:16px;
+  border-top:1px solid var(--border);
+  background:rgba(255,255,255,.015)
+}
+.chat-input-row textarea {
+  flex:1;
+  resize:none;
+  padding:13px 14px;
+  font-size:14.5px;
+  color:var(--text);
+  background:rgba(3,7,16,.56);
+  border:1px solid var(--border);
+  border-radius:13px;
+  outline:none;
+  max-height:120px;
+  font-family:inherit
+}
+.chat-input-row textarea:focus {
+  border-color:rgba(120,169,255,.75);
+  box-shadow:0 0 0 4px rgba(120,169,255,.09)
+}
+.chat-input-row button {
+  flex:none;
+  padding:0 20px;
+  border:0;
+  border-radius:13px;
+  font-weight:800;
+  color:#0b1020;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  cursor:pointer;
+  transition:.18s
+}
+.chat-input-row button:disabled {
+  opacity:.5;
+  cursor:not-allowed
+}
+.chat-input-row button:hover:not(:disabled) {
+  transform:translateY(-1px)
+}
+.advisor-setup-note {
+  margin-top:14px;
+  padding:14px 16px;
+  border-radius:13px;
+  border:1px solid rgba(255,180,90,.3);
+  background:rgba(255,180,90,.08);
+  font-size:13px;
+  color:#f0c98a;
+  line-height:1.6
+}
+@media(max-width:700px) {
+  body {
+    padding:14px 10px 35px
+  }
+  #brandScreen,.brand-panel {
+    padding:20px 16px;
+    border-radius:22px
+  }
+  .hero {
+    grid-template-columns:1fr;
+    min-height:0;
+    padding:20px 6px 32px
+  }
+  .hero h1 {
+    font-size:47px;
+    letter-spacing:-2.6px
+  }
+  .hero-orb {
+    display:none
+  }
+  .brand-grid {
+    grid-template-columns:1fr
+  }
+  .brand-card {
+    min-height:145px
+  }
+  .controls {
+    grid-template-columns:1fr
+  }
+  .panel-header {
+    display:block
+  }
+  .panel-badge {
+    display:inline-block;
+    margin-top:7px
+  }
+  .status-pill {
+    display:none
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*:before,*:after {
+    animation:none!important;
+    transition:none!important
+  }
+}
+/* ---- Light mode (was toggled by the theme button but never styled) ---- */
+body.light-mode {
+  --panel-solid:#ffffff;
+  --border:rgba(15,23,42,.10);
+  --text:#101728;
+  --muted:#5b6785;
+  --accent:#3d6de0;
+  --accent-2:#7a5cf0;
+  --success:#1f9e73;
+  --danger:#e0405a;
+  --shadow:0 24px 60px rgba(30,40,70,.12);
+  background:
+  radial-gradient(circle at 5% 0%,rgba(61,109,224,.10),transparent 30%),
+  radial-gradient(circle at 96% 4%,rgba(122,92,240,.09),transparent 27%),
+  linear-gradient(145deg,#f4f6fc,#eef1fa 55%,#f6f7fd);
+}
+body.light-mode:before {
+  opacity:.35;
+  background-image:linear-gradient(rgba(15,23,42,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.035) 1px,transparent 1px)
+}
+body.light-mode #brandScreen,body.light-mode .brand-panel {
+  background:linear-gradient(145deg,#ffffff,#f7f8fc);
+  box-shadow:var(--shadow)
+}
+body.light-mode .status-pill,body.light-mode .icon-btn,body.light-mode .hero-points span,body.light-mode .quick-chips button,body.light-mode .back-btn,body.light-mode .controls button,body.light-mode .price-card,body.light-mode .history-item,body.light-mode .brand-card,body.light-mode .tips-panel,body.light-mode .brand-count {
+  background:rgba(15,23,42,.035)
+}
+body.light-mode input {
+  background:#f4f6fb;
+  color:var(--text)
+}
+body.light-mode input::placeholder {
+  color:#95a0bc
+}
+body.light-mode .brand-card {
+  background:linear-gradient(145deg,rgba(15,23,42,.035),rgba(15,23,42,.012))
+}
+body.light-mode .brand-card:hover {
+  background:linear-gradient(145deg,rgba(61,109,224,.10),rgba(122,92,240,.05))
+}
+body.light-mode .controls button:first-child {
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#fff
+}
+body.light-mode .icon-btn {
+  color:#3a445e
+}
+body.light-mode .eyebrow,body.light-mode .panel-kicker,body.light-mode .field-label {
+  color:#5b6785
+}
+body.light-mode .live-dot {
+  box-shadow:0 0 8px var(--success)
+}
+body.light-mode #themeBtn:after {
+  content:"";
+}
+/* ---- Light mode text-color fixes ----
+   A lot of labels/values below were hardcoded to pale, near-white colors
+   tuned for the dark background (e.g. #fff, #dce4f8, #cdd8f1). On a white
+   panel those are unreadable. Everything here just re-targets those same
+   elements with legible dark-on-light colors; layout/spacing is untouched. */
+body.light-mode .brand-mark small,
+body.light-mode .status-pill,
+body.light-mode .hero-points span,
+body.light-mode .brand-count,
+body.light-mode .brand-card small,
+body.light-mode .card-arrow,
+body.light-mode .tips-panel p,
+body.light-mode .app-footer,
+body.light-mode .back-btn,
+body.light-mode .panel-badge,
+body.light-mode .quick-chips button,
+body.light-mode .price-card .label,
+body.light-mode .result-title,
+body.light-mode .chat-suggestions button {
+  color:#4a5677
+}
+body.light-mode .brand-card:hover .card-arrow,
+body.light-mode .back-btn:hover,
+body.light-mode .quick-chips button:hover,
+body.light-mode .chat-suggestions button:hover,
+body.light-mode .price-card .value,
+body.light-mode .result-title strong,
+body.light-mode .history h3 {
+  color:#101728
+}
+body.light-mode .orb-car {
+  background:linear-gradient(145deg,rgba(15,23,42,.09),rgba(15,23,42,.03));
+  border-color:rgba(15,23,42,.14)
+}
+body.light-mode .tip-icon {
+  color:#3d6de0
+}
+body.light-mode input::placeholder,
+body.light-mode .chat-input-row textarea::placeholder {
+  color:#7c87a3
+}
+body.light-mode .advisor-setup-note {
+  color:#8a5a12;
+  background:rgba(220,150,40,.12);
+  border-color:rgba(220,150,40,.35)
+}
+body.light-mode .output-hint {
+  color:#5b6785
+}
+body.light-mode .chat-bubble.bot {
+  background:rgba(15,23,42,.045)
+}
+body.light-mode .chat-shell,
+body.light-mode .output,
+body.light-mode .tips-panel {
+  background:rgba(15,23,42,.025)
+}
+</style>
+
+</head>
+<body>
+
+<!-- ===================== BRAND SELECTOR ===================== -->
+<div id="brandScreen">
+  <div class="app-topbar">
+    <div class="brand-mark">
+      <span class="mark"><img src="data:image/png;base64,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" alt="Adnan Auto logo"></span>
+      <span>Adnan Auto <small>PRICING STUDIO</small></span>
+    </div>
+    <div class="top-actions">
+      <span class="status-pill"><span class="live-dot"></span> Offline-ready database</span>
+      <button class="icon-btn" id="themeBtn" type="button" title="Toggle theme" aria-label="Toggle theme">☼</button>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">VEHICLE PRICE ESTIMATOR</span>
+      <h1>Find the right <span>car price.</span></h1>
+      <p>Choose a brand, enter a model and year, and get a clean estimate from the built-in pricing database.</p>
+      <div class="hero-points">
+        <span>✓ Fast lookup</span>
+        <span>✓ Trim-aware results</span>
+        <span>✓ Lebanon market pricing</span>
+        <span>✓ Search history</span>
+      </div>
+    </div>
+    <div class="hero-orb-col">
+      <div class="hero-orb" aria-hidden="true">
+        <div class="orb-ring ring-1"></div><div class="orb-ring ring-2"></div>
+        <div class="orb-car"><img src="data:image/png;base64,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" alt="Adnan Auto logo"></div>
+      </div>
+      <a class="orb-phone" href="tel:+96181980890">📞 81 980 890</a>
+    </div>
+  </section>
+
+  <div class="section-heading">
+    <div>
+      <span class="eyebrow">SELECT A BRAND</span>
+      <h2>What are you pricing today?</h2>
+    </div>
+    <div class="brand-count">6 brands · 65+ models</div>
+  </div>
+
+  <div class="brand-grid">
+    <button class="brand-card" onclick="selectBrand('bmw')" aria-label="Open BMW pricing">
+      <span class="brand-content">
+        <span class="logo-wrap logo-bmw">
+          <svg class="brand-logo" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BMW">
+            <circle cx="24" cy="24" r="20.5" fill="#12182b" stroke="#e7ecf7" stroke-width="2.2"/>
+            <path d="M24 4 A20 20 0 0 1 44 24 L24 24 Z" fill="#f4f7ff"/>
+            <path d="M24 24 L44 24 A20 20 0 0 1 24 44 Z" fill="#3d7cff"/>
+            <path d="M4 24 A20 20 0 0 1 24 4 L24 24 Z" fill="#3d7cff"/>
+            <path d="M24 24 L24 44 A20 20 0 0 1 4 24 Z" fill="#f4f7ff"/>
+            <circle cx="24" cy="24" r="20.5" fill="none" stroke="#0c1120" stroke-width="1.2"/>
+          </svg>
+        </span>
+        <span class="brand-name">BMW</span><small>Performance & luxury</small>
+      </span>
+      <span class="card-arrow">↗</span>
+    </button>
+    <button class="brand-card" onclick="selectBrand('honda')" aria-label="Open Honda pricing">
+      <span class="brand-content">
+        <span class="logo-wrap logo-honda">
+          <svg class="brand-logo" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Honda">
+            <rect x="2.5" y="2.5" width="43" height="43" rx="12" fill="#161c2c" stroke="#f4f6fb" stroke-width="2"/>
+            <path d="M15 13v22M33 13v22M15 24h18" stroke="#f4f6fb" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">Honda</span><small>Reliable & practical</small>
+      </span>
+      <span class="card-arrow">↗</span>
+    </button>
+    <button class="brand-card" onclick="selectBrand('mercedes')" aria-label="Open Mercedes pricing">
+      <span class="brand-content">
+        <span class="logo-wrap logo-mercedes">
+          <svg class="brand-logo" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mercedes-Benz">
+            <circle cx="24" cy="24" r="20.5" fill="#161c2c" stroke="#e5eaf5" stroke-width="2"/>
+            <circle cx="24" cy="24" r="16.5" fill="none" stroke="#e5eaf5" stroke-width="1" opacity=".45"/>
+            <g stroke="#e5eaf5" stroke-width="3" stroke-linecap="round">
+              <line x1="24" y1="24" x2="24" y2="8.5"/>
+              <line x1="24" y1="24" x2="11" y2="32.2"/>
+              <line x1="24" y1="24" x2="37" y2="32.2"/>
+            </g>
+            <circle cx="24" cy="24" r="3.4" fill="#e5eaf5"/>
+          </svg>
+        </span>
+        <span class="brand-name">Mercedes-Benz</span><small>Executive & premium</small>
+      </span>
+      <span class="card-arrow">↗</span>
+    </button>
+    <button class="brand-card" onclick="selectBrand('rangerover')" aria-label="Open Range Rover pricing">
+      <span class="brand-content">
+        <span class="logo-wrap logo-rr">
+          <svg class="brand-logo" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Range Rover">
+            <rect x="2.5" y="12" width="43" height="24" rx="7" fill="#161c2c" stroke="#e5eaf5" stroke-width="2"/>
+            <text x="24" y="29" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="15" letter-spacing="1.5" fill="#e5eaf5">RR</text>
+            <line x1="8" y1="40" x2="40" y2="40" stroke="#e5eaf5" stroke-width="1.4" stroke-linecap="round" opacity=".55"/>
+          </svg>
+        </span>
+        <span class="brand-name">Range Rover</span><small>Luxury SUVs</small>
+      </span>
+      <span class="card-arrow">↗</span>
+    </button>
+    <button class="brand-card" onclick="selectBrand('hyundai')" aria-label="Open Hyundai pricing">
+      <span class="brand-content">
+        <span class="logo-wrap logo-hyundai">
+          <svg class="brand-logo" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hyundai">
+            <ellipse cx="24" cy="24" rx="21" ry="14.5" fill="#161c2c" stroke="#e5eaf5" stroke-width="2"/>
+            <ellipse cx="24" cy="24" rx="21" ry="14.5" fill="none" stroke="#e5eaf5" stroke-width="1" opacity=".4"/>
+            <path d="M15.5 14.5 L15.5 33.5" stroke="#e5eaf5" stroke-width="3" stroke-linecap="round"/>
+            <path d="M32.5 14.5 L32.5 33.5" stroke="#e5eaf5" stroke-width="3" stroke-linecap="round"/>
+            <path d="M15.5 21 C 21 18.5, 27 28.5, 32.5 26.5" stroke="#e5eaf5" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">Hyundai</span><small>Value & versatility</small>
+      </span>
+      <span class="card-arrow">↗</span>
+    </button>
+    <button class="brand-card" onclick="selectBrand('toyota')" aria-label="Open Toyota pricing">
+      <span class="brand-content">
+        <span class="logo-wrap logo-toyota">
+          <svg class="brand-logo" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Toyota">
+            <ellipse cx="24" cy="24" rx="21" ry="15.5" fill="#161c2c" stroke="#e5eaf5" stroke-width="2"/>
+            <ellipse cx="24" cy="24" rx="8" ry="15" fill="none" stroke="#e5eaf5" stroke-width="2.4"/>
+            <ellipse cx="24" cy="24" rx="15.5" ry="6" fill="none" stroke="#e5eaf5" stroke-width="2.4"/>
+          </svg>
+        </span>
+        <span class="brand-name">Toyota</span><small>Dependable resale</small>
+      </span>
+      <span class="card-arrow">↗</span>
+    </button>
+  </div>
+
+  <section class="tips-panel">
+    <div class="tip-icon">⌕</div>
+    <div>
+      <strong>Tip: search naturally</strong>
+      <p>Try inputs like <b>“Civic”</b>, <b>“M4”</b>, <b>“C 300”</b>, <b>“Sport V8”</b>, <b>“Tucson”</b>, <b>“Creta”</b>, <b>“Land Cruiser”</b>, or <b>“Corolla Cross”</b>. Spaces and dashes are handled automatically.</p>
+    </div>
+  </section>
+
+  <footer class="app-footer">Adnan Auto Pricing <span>•</span> Estimates are based on the included database.</footer>
+</div>
+
+<!-- ===================== BMW PANEL ===================== -->
+<div class="brand-panel" id="panel-bmw">
+  <button class="back-btn" onclick="goBack()"><span>←</span> All brands</button>
+  <h1 class="panel-title">Adnan BMW Pricing</h1>
+  <p>Enter model and year (e.g., 320i 2016, M3 Coupe 2017, X5 2018). Spaces, dashes, and case are flexible.</p>
+
+  <label class="field-label" for="bmw-modelInput">Vehicle model</label>
+   <input type="text" id="bmw-modelInput" placeholder="Model (e.g., 320i, M3, X5)" autocomplete="off">
+   <div class="quick-chips"><button type="button" onclick="quickFill('bmw','320i')">320i</button><button type="button" onclick="quickFill('bmw','M3')">M3</button><button type="button" onclick="quickFill('bmw','X5')">X5</button></div>
+  <label class="field-label" for="bmw-yearInput">Model year</label><input type="text" id="bmw-yearInput" placeholder="Year (e.g., 2016)">
+
+  <div class="controls">
+    <button onclick="bmwCheckPrice()">Check Price</button>
+    <button onclick="bmwClearHistory()">Clear History</button>
+    <button id="bmw-historyToggleBtn" onclick="bmwToggleHistory()">Show History</button>
+  </div>
+
+  <div class="output" id="bmw-output"><span class="output-hint">Enter a model and year to see estimated pricing.</span></div>
+
+  <div class="history" id="bmw-history">
+    <h3>Query History</h3>
+    <div id="bmw-historyList"></div>
+  </div>
+</div>
+
+<!-- ===================== HONDA PANEL ===================== -->
+<div class="brand-panel" id="panel-honda">
+  <button class="back-btn" onclick="goBack()"><span>←</span> All brands</button>
+  <div class="panel-header"><h1 class="panel-title">Adnan Honda Pricing</h1><span class="panel-badge">HONDA</span></div>
+  <p>Enter model and optionally year/trim (e.g., Civic 2016, Civic Si 2017, Accord EX-L 2019, CR-V LX 2018). Spaces, dashes, and case are flexible.</p>
+
+  <label class="field-label" for="honda-modelInput">Vehicle model / trim</label>
+   <input type="text" id="honda-modelInput" placeholder="Model (e.g., Civic, Accord, CR-V)" autocomplete="off">
+   <div class="quick-chips"><button type="button" onclick="quickFill('honda','Civic')">Civic</button><button type="button" onclick="quickFill('honda','Accord')">Accord</button><button type="button" onclick="quickFill('honda','CR-V')">CR-V</button></div>
+  <label class="field-label" for="honda-yearInput">Model year</label><input type="text" id="honda-yearInput" placeholder="Year (optional, e.g., 2016)">
+
+  <div class="controls">
+    <button onclick="hondaCheckPrice()">Check Price</button>
+    <button onclick="hondaClearHistory()">Clear History</button>
+    <button id="honda-historyToggleBtn" onclick="hondaToggleHistory()">Show History</button>
+  </div>
+
+  <div class="output" id="honda-output"><span class="output-hint">Enter a model to browse available pricing.</span></div>
+
+  <div class="history" id="honda-history">
+    <h3>Query History</h3>
+    <div id="honda-historyList"></div>
+  </div>
+</div>
+
+<!-- ===================== MERCEDES PANEL ===================== -->
+<div class="brand-panel" id="panel-mercedes">
+  <button class="back-btn" onclick="goBack()"><span>←</span> All brands</button>
+  <div class="panel-header"><h1 class="panel-title">Adnan Mercedes Pricing</h1><span class="panel-badge">MERCEDES</span></div>
+  <p>Enter model and year (e.g., C300 2016 or GLA250 2017). Spaces, dashes, and case are flexible.</p>
+
+  <label class="field-label" for="merc-modelInput">Vehicle model</label>
+   <input type="text" id="merc-modelInput" placeholder="Model (e.g., C300 or GLA250)" autocomplete="off">
+   <div class="quick-chips"><button type="button" onclick="quickFill('merc','C300')">C300</button><button type="button" onclick="quickFill('merc','E300')">E300</button><button type="button" onclick="quickFill('merc','GLA250')">GLA250</button></div>
+  <label class="field-label" for="merc-yearInput">Model year</label><input type="text" id="merc-yearInput" placeholder="Year (e.g., 2016)">
+
+  <div class="controls">
+    <button onclick="mercCheckPrice()">Check Price</button>
+    <button onclick="mercClearHistory()">Clear History</button>
+    <button id="merc-historyToggleBtn" onclick="mercToggleHistory()">Show History</button>
+  </div>
+
+  <div class="output" id="merc-output"><span class="output-hint">Enter a model and year to see estimated pricing.</span></div>
+
+  <div class="history" id="merc-history">
+    <h3>Query History</h3>
+    <div id="merc-historyList"></div>
+  </div>
+</div>
+
+<!-- ===================== RANGE ROVER PANEL ===================== -->
+<div class="brand-panel" id="panel-rangerover">
+  <button class="back-btn" onclick="goBack()"><span>←</span> All brands</button>
+  <div class="panel-header"><h1 class="panel-title">Adnan Range Rover Pricing</h1><span class="panel-badge">RANGE ROVER</span></div>
+  <p>Enter model, year, and/or trim (e.g., Sport 2018 V8, Vogue V6 2020, Evoque 2019). Case and spaces are flexible.</p>
+
+  <label class="field-label" for="rr-modelInput">Vehicle model / trim</label>
+   <input type="text" id="rr-modelInput" placeholder="Model (e.g., Sport, Evoque, Vogue)" autocomplete="off">
+   <div class="quick-chips"><button type="button" onclick="quickFill('rr','Sport V8')">Sport V8</button><button type="button" onclick="quickFill('rr','Vogue')">Vogue</button><button type="button" onclick="quickFill('rr','Evoque')">Evoque</button></div>
+  <label class="field-label" for="rr-yearInput">Model year</label><input type="text" id="rr-yearInput" placeholder="Year (optional, e.g., 2018)">
+
+  <div class="controls">
+    <button onclick="rrCheckPrice()">Check Price</button>
+    <button onclick="rrClearHistory()">Clear History</button>
+    <button id="rr-historyToggleBtn" onclick="rrToggleHistory()">Show History</button>
+  </div>
+
+  <div class="output" id="rr-output"><span class="output-hint">Enter a Range Rover model to browse available pricing.</span></div>
+
+  <div class="history" id="rr-history">
+    <h3>Query History</h3>
+    <div id="rr-historyList"></div>
+  </div>
+</div>
+
+<!-- ===================== HYUNDAI PANEL ===================== -->
+<div class="brand-panel" id="panel-hyundai">
+  <button class="back-btn" onclick="goBack()"><span>←</span> All brands</button>
+  <div class="panel-header"><h1 class="panel-title">Adnan Hyundai Pricing</h1><span class="panel-badge">HYUNDAI</span></div>
+  <p>Enter model and year (e.g., Elantra 2018, Tucson 2020, Santa Fe 2019, Creta 2021, H1 2018). Elantra, Tucson, Santa Fe, and Sonata also break out by trim (GT / Sport / XL). Spaces, dashes, and case are flexible.</p>
+
+  <label class="field-label" for="hy-modelInput">Vehicle model</label>
+   <input type="text" id="hy-modelInput" placeholder="Model (e.g., Elantra, Tucson, Creta)" autocomplete="off">
+   <div class="quick-chips"><button type="button" onclick="quickFill('hy','Elantra')">Elantra</button><button type="button" onclick="quickFill('hy','Tucson')">Tucson</button><button type="button" onclick="quickFill('hy','Santa Fe')">Santa Fe</button><button type="button" onclick="quickFill('hy','Kona')">Kona</button><button type="button" onclick="quickFill('hy','Creta')">Creta</button><button type="button" onclick="quickFill('hy','H1')">H1</button></div>
+  <label class="field-label" for="hy-yearInput">Model year</label><input type="text" id="hy-yearInput" placeholder="Year (e.g., 2018)">
+
+  <div class="controls">
+    <button onclick="hyCheckPrice()">Check Price</button>
+    <button onclick="hyClearHistory()">Clear History</button>
+    <button id="hy-historyToggleBtn" onclick="hyToggleHistory()">Show History</button>
+  </div>
+
+  <div class="output" id="hy-output"><span class="output-hint">Enter a model and year to see estimated pricing.</span></div>
+
+  <div class="history" id="hy-history">
+    <h3>Query History</h3>
+    <div id="hy-historyList"></div>
+  </div>
+</div>
+
+<!-- ===================== TOYOTA PANEL ===================== -->
+<div class="brand-panel" id="panel-toyota">
+  <button class="back-btn" onclick="goBack()"><span>←</span> All brands</button>
+  <div class="panel-header"><h1 class="panel-title">Adnan Toyota Pricing</h1><span class="panel-badge">TOYOTA</span></div>
+  <p>Enter model and year (e.g., Corolla 2018, RAV4 2020, Land Cruiser 2016, Prado 2019, Corolla Cross 2022). Corolla, Camry, RAV4, Yaris, Hilux, Prado, Land Cruiser, and Fortuner also break out by trim (GXR/VXR, GX/VX, hatchback, etc). Spaces, dashes, and case are flexible.</p>
+
+  <label class="field-label" for="toy-modelInput">Vehicle model</label>
+   <input type="text" id="toy-modelInput" placeholder="Model (e.g., Corolla, Camry, Land Cruiser)" autocomplete="off">
+   <div class="quick-chips"><button type="button" onclick="quickFill('toy','Corolla')">Corolla</button><button type="button" onclick="quickFill('toy','RAV4')">RAV4</button><button type="button" onclick="quickFill('toy','Land Cruiser')">Land Cruiser</button><button type="button" onclick="quickFill('toy','FJ Cruiser')">FJ Cruiser</button><button type="button" onclick="quickFill('toy','Corolla Cross')">Corolla Cross</button><button type="button" onclick="quickFill('toy','Land Cruiser Pickup')">LC Pickup</button></div>
+  <label class="field-label" for="toy-yearInput">Model year</label><input type="text" id="toy-yearInput" placeholder="Year (e.g., 2018)">
+
+  <div class="controls">
+    <button onclick="toyCheckPrice()">Check Price</button>
+    <button onclick="toyClearHistory()">Clear History</button>
+    <button id="toy-historyToggleBtn" onclick="toyToggleHistory()">Show History</button>
+  </div>
+
+  <div class="output" id="toy-output"><span class="output-hint">Enter a model and year to see estimated pricing.</span></div>
+
+  <div class="history" id="toy-history">
+    <h3>Query History</h3>
+    <div id="toy-historyList"></div>
+  </div>
+</div>
+
+<!-- ===================== AI ADVISOR — FLOATING WIDGET ===================== -->
+<!-- Lives outside the brand-panel system so it floats over every screen. -->
+<div class="advisor-popup" id="advisor-popup">
+  <div class="advisor-popup-header">
+    <div>
+      <h4>Adnan Auto Advisor</h4>
+      <span class="sub">Tell me your budget & needs — I'll suggest cars</span>
+    </div>
+    <button class="advisor-popup-close" onclick="advisorToggleWidget(false)" aria-label="Close chat">✕</button>
+  </div>
+  <div class="chat-shell">
+    <div class="chat-messages" id="advisor-messages"></div>
+    <div class="chat-suggestions" id="advisor-suggestions">
+      <button type="button" onclick="advisorSend('I need a reliable family SUV, budget around $25,000')">Family SUV, ~$25k</button>
+      <button type="button" onclick="advisorSend('Looking for a fun, sporty car under $20,000 with good resale value')">Sporty, under $20k</button>
+      <button type="button" onclick="advisorSend('Want something luxurious and comfortable, budget is flexible')">Luxury, flexible budget</button>
+    </div>
+    <div class="chat-input-row">
+      <textarea id="advisor-input" rows="1" placeholder="e.g. Budget $18,000, mostly city driving, care most about fuel economy and reliability..."></textarea>
+      <button id="advisor-send-btn" onclick="advisorSend()">Send</button>
+    </div>
+  </div>
+  <div class="advisor-setup-note" id="advisor-setup-note" style="display:none">
+    ⚠️ The Advisor's backend isn't connected yet. Set <code>ADVISOR_API_ENDPOINT</code> at the top of the script to your deployed proxy URL (see <code>advisor-server-example.js</code>) and it will start responding.
+  </div>
+</div>
+
+<button class="advisor-fab" id="advisor-fab" onclick="advisorToggleWidget()" aria-label="Open car advisor chat">
+  <span class="advisor-fab-ring"></span>
+  <span class="advisor-fab-badge" id="advisor-fab-badge">1</span>
+  <span id="advisor-fab-icon">🤖</span>
+</button>
+
+
+
+<script id="adnan-enhancements">function quickFill(prefix, value) {
+  const input = document.getElementById(prefix + '-modelInput');
+  input.value = value;
+  input.focus();
+}
+function saveHistory(key, list) {
+  try {
+    localStorage.setItem('adnan_'+key+'_history', JSON.stringify(list.slice(0,20)));
+  }
+  catch(e) {
+  }
+}
+function loadHistory(key) {
+  try {
+    return JSON.parse(localStorage.getItem('adnan_'+key+'_history') || '[]');
+  }
+  catch(e) {
+    return [];
+  }
+}
+function clearSavedHistory(key) {
+  try {
+    localStorage.removeItem('adnan_'+key+'_history');
+  }
+  catch(e) {
+  }
+}
+function updateThemeIcon() {
+  const btn = document.getElementById('themeBtn');
+  if(!btn) return;
+  const isLight = document.body.classList.contains('light-mode');
+  btn.textContent = isLight ? '☾' : '☼';
+  btn.title = isLight ? 'Switch to dark mode' : 'Switch to light mode';
+  btn.setAttribute('aria-label', btn.title);
+}
+function toggleTheme() {
+  document.body.classList.toggle('light-mode');
+  try {
+    localStorage.setItem('adnan_theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+  }
+  catch(e) {
+  }
+  updateThemeIcon();
+}
+document.getElementById('themeBtn')?.addEventListener('click', toggleTheme);
+try {
+  if(localStorage.getItem('adnan_theme') === 'light') document.body.classList.add('light-mode');
+}
+catch(e) {
+}
+updateThemeIcon();</script>
+
+<script id="ui-helper">function formatPrice(value) {
+  return '$' + Number(value).toLocaleString('en-US');
+}
+function makePriceCards(title, prices) {
+  let html = `<div class="result-title">Estimated pricing for <strong>${title}</strong></div><div class="price-grid">`;
+  for(const trim in prices) {
+    html += `<div class="price-card"><div class="label">${trim.replace(/-/g,' ')}</div><div class="value">${formatPrice(prices[trim])}</div></div>`;
+  }
+  return html + '</div>';
+}</script>
+
+<script>/* ===================== BRAND SWITCHING ===================== */
+function selectBrand(brand) {
+  document.getElementById('brandScreen').style.display = 'none';
+  document.querySelectorAll('.brand-panel').forEach(p => p.classList.remove('active'));
+  const panel = document.getElementById('panel-' + brand);
+  panel.classList.add('active');
+  const firstField = panel.querySelector('input, textarea');
+  if (firstField) firstField.focus();
+}
+function goBack() {
+  document.querySelectorAll('.brand-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('brandScreen').style.display = 'block';
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && document.querySelector('.brand-panel.active')) goBack();
+}
+);
+/* ===================== BMW LOGIC ===================== */
+const bmwCarPrices = {
+  "320I": {
+    2011: {
+      normal:8500,coupe:9200
+    }
+    ,2012: {
+      normal:9500,coupe:10000
+    }
+    ,2013: {
+      normal:10800,coupe:11500
+    }
+    ,2014: {
+      normal:11800,coupe:12500
+    }
+    ,2015: {
+      normal:12800,coupe:13500
+    }
+    ,2016: {
+      normal:13800,coupe:14500
+    }
+    ,2017: {
+      normal:14800,coupe:15500
+    }
+    ,2018: {
+      normal:15800,coupe:16500
+    }
+    ,2019: {
+      normal:16800,coupe:17500
+    }
+  }
+  ,
+  "330I": {
+    2019: {
+      normal:29000,coupe:30000
+    }
+    ,2020: {
+      normal:31000,coupe:32000
+    }
+  }
+  ,
+  "328I": {
+    2012: {
+      normal:11000
+    }
+    ,2013: {
+      normal:12000
+    }
+    ,2014: {
+      normal:13000
+    }
+    ,2015: {
+      normal:13500
+    }
+    ,2016: {
+      normal:14500
+    }
+  }
+  ,
+  "M3": {
+    2012: {
+      normal:45000
+    }
+    ,2013: {
+      normal:46000
+    }
+    ,2014: {
+      normal:47000
+    }
+    ,2015: {
+      normal:48000
+    }
+    ,2016: {
+      normal:49000
+    }
+  }
+  ,
+  "430I": {
+    2011: {
+      normal:8500,coupe:9200
+    }
+    ,2012: {
+      normal:9800,coupe:10300
+    }
+    ,2013: {
+      normal:10500,coupe:11000
+    }
+    ,2014: {
+      normal:11200,coupe:11700
+    }
+    ,2015: {
+      normal:12000,coupe:12500
+    }
+    ,2016: {
+      normal:12800,coupe:13300
+    }
+    ,2017: {
+      normal:19800,coupe:20500
+    }
+    ,2018: {
+      normal:22000,coupe:22500
+    }
+    ,2019: {
+      normal:23000,coupe:23500
+    }
+    ,2020: {
+      normal:24000,coupe:24500
+    }
+    ,2021: {
+      normal:25000,coupe:25500
+    }
+    ,2022: {
+      normal:26000,coupe:26500
+    }
+    ,2023: {
+      normal:27000,coupe:27500
+    }
+    ,2024: {
+      normal:28000,coupe:28500
+    }
+    ,2025: {
+      normal:29000,coupe:29500
+    }
+  }
+  ,
+  "440I": {
+    2017: {
+      normal:29200,coupe:30000
+    }
+    ,2018: {
+      normal:31000,coupe:32000
+    }
+    ,2019: {
+      normal:32500,coupe:33000
+    }
+    ,2020: {
+      normal:33500,coupe:34000
+    }
+    ,2021: {
+      normal:34500,coupe:35000
+    }
+    ,2022: {
+      normal:35500,coupe:36000
+    }
+    ,2023: {
+      normal:36500,coupe:37000
+    }
+    ,2024: {
+      normal:37500,coupe:38000
+    }
+    ,2025: {
+      normal:38500,coupe:39000
+    }
+  }
+  ,
+  "M4": {
+    2017: {
+      normal:45000,coupe:46000
+    }
+    ,2018: {
+      normal:47000,coupe:48000
+    }
+    ,2019: {
+      normal:49000,coupe:50000
+    }
+    ,2020: {
+      normal:54000,coupe:55000
+    }
+    ,2021: {
+      normal:57000,coupe:59000
+    }
+    ,2022: {
+      normal:61000,coupe:63000
+    }
+    ,2023: {
+      normal:67000,coupe:68000
+    }
+    ,2024: {
+      normal:88000,coupe:90000
+    }
+  }
+  ,
+  "520I": {
+    2011: {
+      normal:9000,sedan:9500
+    }
+    ,2012: {
+      normal:9800,sedan:10300
+    }
+    ,2013: {
+      normal:10500,sedan:11000
+    }
+    ,2014: {
+      normal:11200,sedan:11700
+    }
+    ,2015: {
+      normal:12000,sedan:12500
+    }
+    ,2016: {
+      normal:12800,sedan:13300
+    }
+    ,2017: {
+      normal:21000,sedan:21500
+    }
+    ,2018: {
+      normal:22200,sedan:22700
+    }
+    ,2019: {
+      normal:23000,sedan:23500
+    }
+    ,2020: {
+      normal:24000,sedan:25000
+    }
+  }
+  ,
+  "528I": {
+    2017: {
+      normal:22500,sedan:23000
+    }
+    ,2018: {
+      normal:23500,sedan:24000
+    }
+    ,2019: {
+      normal:24500,sedan:25000
+    }
+    ,2020: {
+      normal:25500,sedan:26000
+    }
+    ,2021: {
+      normal:26500,sedan:27000
+    }
+    ,2022: {
+      normal:27500,sedan:28000
+    }
+    ,2023: {
+      normal:28500,sedan:29000
+    }
+    ,2024: {
+      normal:29500,sedan:30000
+    }
+    ,2025: {
+      normal:30500,sedan:31000
+    }
+  }
+  ,
+  "530I": {
+    2017: {
+      normal:26500,sedan:27000
+    }
+    ,2018: {
+      normal:27800,sedan:28300
+    }
+    ,2019: {
+      normal:28000,sedan:28500
+    }
+    ,2020: {
+      normal:29000,sedan:29500
+    }
+    ,2021: {
+      normal:30000,sedan:30500
+    }
+    ,2022: {
+      normal:31000,sedan:31500
+    }
+    ,2023: {
+      normal:32000,sedan:32500
+    }
+    ,2024: {
+      normal:33000,sedan:33500
+    }
+    ,2025: {
+      normal:34000,sedan:34500
+    }
+  }
+  ,
+  "540I": {
+    2017: {
+      normal:32000
+    }
+    ,2018: {
+      normal:33000
+    }
+    ,2019: {
+      normal:34000
+    }
+    ,2020: {
+      normal:35000
+    }
+    ,2021: {
+      normal:36000
+    }
+    ,2022: {
+      normal:37000
+    }
+    ,2023: {
+      normal:38000
+    }
+    ,2024: {
+      normal:39000
+    }
+    ,2025: {
+      normal:40000
+    }
+  }
+  ,
+  "M5": {
+    2012: {
+      normal:45000
+    }
+    ,2013: {
+      normal:44500
+    }
+    ,2014: {
+      normal:52000
+    }
+    ,2015: {
+      normal:47000
+    }
+    ,2016: {
+      normal:50000
+    }
+    ,2017: {
+      normal:60000
+    }
+  }
+  ,
+  "X3": {
+    2005: {
+      normal:5300
+    }
+    ,2006: {
+      normal:5800
+    }
+    ,2007: {
+      normal:6700
+    }
+    ,2008: {
+      normal:6000
+    }
+    ,2009: {
+      normal:6500
+    }
+    ,2010: {
+      normal:7000
+    }
+    ,2011: {
+      normal:7500
+    }
+    ,2012: {
+      normal:9800
+    }
+    ,2013: {
+      normal:10000
+    }
+    ,2014: {
+      normal:11000
+    }
+    ,2015: {
+      normal:12000
+    }
+    ,2016: {
+      normal:13000
+    }
+    ,2017: {
+      normal:17700
+    }
+    ,2018: {
+      normal:25500
+    }
+    ,2019: {
+      normal:30000
+    }
+    ,2020: {
+      normal:72000
+    }
+    ,2021: {
+      normal:74000
+    }
+    ,2022: {
+      normal:76000
+    }
+    ,2023: {
+      normal:78000
+    }
+    ,2024: {
+      normal:80000
+    }
+    ,2025: {
+      normal:82000
+    }
+  }
+  ,
+  "X5": {
+    2005: {
+      normal:5000
+    }
+    ,2006: {
+      normal:5500
+    }
+    ,2007: {
+      normal:6200
+    }
+    ,2008: {
+      normal:6800
+    }
+    ,2009: {
+      normal:7000
+    }
+    ,2010: {
+      normal:8700
+    }
+    ,2011: {
+      normal:9500
+    }
+    ,2012: {
+      normal:11500
+    }
+    ,2013: {
+      normal:12500
+    }
+    ,2014: {
+      normal:18500
+    }
+    ,2015: {
+      normal:21000
+    }
+    ,2016: {
+      normal:25000
+    }
+    ,2017: {
+      normal:26000
+    }
+    ,2018: {
+      normal:27000
+    }
+    ,2019: {
+      normal:35000
+    }
+    ,2020: {
+      normal:40000
+    }
+    ,2021: {
+      normal:70000
+    }
+    ,2022: {
+      normal:82000
+    }
+    ,2023: {
+      normal:96000
+    }
+    ,2024: {
+      normal:98000
+    }
+  }
+}
+;
+let bmwHistoryList = loadHistory("bmw");
+function bmwNormalizeInput(text) {
+  return text.trim().replace(/\s+/g, '').replace(/-/g,'').toUpperCase();
+}
+function bmwClearInputs() {
+  document.getElementById('bmw-modelInput').value = '';
+  document.getElementById('bmw-yearInput').value = '';
+  document.getElementById('bmw-modelInput').focus();
+}
+function bmwCheckPrice() {
+  let modelRaw = document.getElementById('bmw-modelInput').value;
+  const yearRaw = document.getElementById('bmw-yearInput').value;
+  const outputDiv = document.getElementById('bmw-output');
+  if (!modelRaw || !yearRaw) {
+    outputDiv.innerHTML = "<span class='error'>Please enter both model and year.</span>";
+    bmwClearInputs();
+    return;
+  }
+  const year = parseInt(yearRaw);
+  if (isNaN(year)) {
+    outputDiv.innerHTML = "<span class='error'>Please enter a valid year.</span>";
+    bmwClearInputs();
+    return;
+  }
+  modelRaw = bmwNormalizeInput(modelRaw);
+  // Sort keys longest-first so a specific code (e.g. "440I") is checked
+  // before a shorter code that could also appear as its substring.
+  const bmwSortedKeys = Object.keys(bmwCarPrices).sort((a, b) => b.length - a.length);
+  const bmwTrimKeywords = ['COUPE', 'SEDAN'];
+  let bmwTrim = '';
+  for (const t of bmwTrimKeywords) {
+    if (modelRaw.includes(t)) {
+      bmwTrim = t.toLowerCase();
+      break;
+    }
+  }
+  let found = false;
+  for (const key of bmwSortedKeys) {
+    if (modelRaw.includes(key)) {
+      const yearPrices = bmwCarPrices[key][year];
+      if (yearPrices) {
+        // If the user specified a trim (coupe/sedan) and that trim exists
+        // for this year, show only that trim; otherwise show everything.
+        const prices = (bmwTrim && yearPrices[bmwTrim]) ? {
+          [bmwTrim]: yearPrices[bmwTrim]
+        }
+        : yearPrices;
+        const result = makePriceCards(`${key} ${year}`, prices);
+        outputDiv.innerHTML = result;
+        bmwHistoryList.unshift(result);
+        saveHistory("bmw", bmwHistoryList);
+        bmwRenderHistory();
+        found = true;
+        break;
+      }
+    }
+  }
+  if (!found) {
+    outputDiv.innerHTML = "<span class='error'>Model or year not found. Please try again.</span>";
+  }
+  bmwClearInputs();
+}
+function bmwToggleHistory() {
+  const historyDiv = document.getElementById('bmw-history');
+  const btn = document.getElementById('bmw-historyToggleBtn');
+  if (historyDiv.style.display === 'none' || historyDiv.style.display === '') {
+    historyDiv.style.display = 'block';
+    btn.textContent = 'Hide History';
+    bmwRenderHistory();
+  }
+  else {
+    historyDiv.style.display = 'none';
+    btn.textContent = 'Show History';
+  }
+}
+function bmwRenderHistory() {
+  const historyDiv = document.getElementById('bmw-historyList');
+  historyDiv.innerHTML = '';
+  bmwHistoryList.forEach(item => historyDiv.innerHTML += `<div class='history-item'>${item}</div>`);
+}
+function bmwClearHistory() {
+  bmwHistoryList = [];
+  clearSavedHistory("bmw");
+  document.getElementById('bmw-historyList').innerHTML = '';
+  document.getElementById('bmw-output').innerHTML = "<span class='success'>History cleared.</span>";
+}
+document.getElementById('bmw-modelInput').addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    document.getElementById('bmw-yearInput').focus();
+  }
+}
+);
+document.getElementById('bmw-yearInput').addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    bmwCheckPrice();
+  }
+}
+);
+/* ===================== HONDA LOGIC ===================== */
+const hondaCarPrices = {
+  "HONDACIVIC2006": {
+    normal:4000, coupe:4500, si:5000
+  }
+  ,
+  "HONDACIVIC2007": {
+    normal:5200, coupe:5700, si:5900
+  }
+  ,
+  "HONDACIVIC2008": {
+    normal:6000, coupe:6200, si:6400
+  }
+  ,
+  "HONDACIVIC2009": {
+    normal:6500, coupe:6700, si:6850
+  }
+  ,
+  "HONDACIVIC2010": {
+    normal:6900, coupe:7000, si:7100
+  }
+  ,
+  "HONDACIVIC2011": {
+    normal:7200, coupe:7400, si:7500
+  }
+  ,
+  "HONDACIVIC2012": {
+    normal:7500, coupe:7700, si:7700
+  }
+  ,
+  "HONDACIVIC2013": {
+    normal:7800, coupe:8000, si:8100
+  }
+  ,
+  "HONDACIVIC2014": {
+    normal:8500, coupe:8700, si:9000
+  }
+  ,
+  "HONDACIVIC2015": {
+    normal:10000, coupe:10500, si:10500
+  }
+  ,
+  "HONDACIVIC2016": {
+    normal:11000, coupe:11300, hatchback:11500, si:11500, 'type-r':12500
+  }
+  ,
+  "HONDACIVIC2017": {
+    normal:13500, coupe:13800, hatchback:14000, si:14500, 'type-r':15000
+  }
+  ,
+  "HONDACIVIC2018": {
+    normal:15000, coupe:15400, hatchback:15600, si:15800, 'type-r':16000
+  }
+  ,
+  "HONDACIVIC2019": {
+    normal:16000, coupe:16200, hatchback:16200, si:16500, 'type-r':16800
+  }
+  ,
+  "HONDACIVIC2020": {
+    normal:16300, sedan:16500, hatchback:16600, si:16800, 'type-r':17000
+  }
+  ,
+  "HONDACIVIC2021": {
+    normal:17000, sedan:17200, hatchback:17400, si:17500, 'type-r':17700
+  }
+  ,
+  "HONDAACCORD2006": {
+    normal:5500, coupe:5800
+  }
+  ,
+  "HONDAACCORD2007": {
+    normal:6200, coupe:6400
+  }
+  ,
+  "HONDAACCORD2008": {
+    normal:6500, coupe:6850
+  }
+  ,
+  "HONDAACCORD2009": {
+    normal:7000, coupe:7200
+  }
+  ,
+  "HONDAACCORD2010": {
+    normal:7300, coupe:7500
+  }
+  ,
+  "HONDAACCORD2011": {
+    normal:7600, coupe:7800
+  }
+  ,
+  "HONDAACCORD2012": {
+    normal:8000, coupe:8200
+  }
+  ,
+  "HONDAACCORD2013": {
+    normal:8500, coupe:8800
+  }
+  ,
+  "HONDAACCORD2014": {
+    normal:9000, coupe:9500
+  }
+  ,
+  "HONDAACCORD2015": {
+    normal:10000, coupe:10500
+  }
+  ,
+  "HONDAACCORD2016": {
+    normal:11000, coupe:11500
+  }
+  ,
+  "HONDAACCORD2017": {
+    normal:12500, coupe:13000
+  }
+  ,
+  "HONDAACCORD2018": {
+    normal:15000, 'ex-l':16000
+  }
+  ,
+  "HONDAACCORD2019": {
+    normal:15500, 'ex-l':16500
+  }
+  ,
+  "HONDACRV2002": {
+    lx:5200, ex:5500
+  }
+  ,
+  "HONDACRV2003": {
+    lx:5600, ex:5800
+  }
+  ,
+  "HONDACRV2004": {
+    lx:6000, ex:6300
+  }
+  ,
+  "HONDACRV2005": {
+    lx:6500, ex:6800
+  }
+  ,
+  "HONDACRV2006": {
+    lx:7000, ex:7300
+  }
+  ,
+  "HONDACRV2007": {
+    lx:8200, ex:8500, 'ex-l':9000
+  }
+  ,
+  "HONDACRV2008": {
+    lx:9000, ex:9200, 'ex-l':9600
+  }
+  ,
+  "HONDACRV2009": {
+    lx:9500, ex:9800, 'ex-l':10000
+  }
+  ,
+  "HONDACRV2010": {
+    lx:10000, ex:10500, 'ex-l':10800
+  }
+  ,
+  "HONDACRV2011": {
+    lx:11000, ex:11400, 'ex-l':11800
+  }
+  ,
+  "HONDACRV2012": {
+    lx:12300, ex:12700, 'ex-l':13200
+  }
+  ,
+  "HONDACRV2013": {
+    lx:12500, ex:13000, 'ex-l':13500
+  }
+  ,
+  "HONDACRV2014": {
+    lx:12800, ex:13200, 'ex-l':13800
+  }
+  ,
+  "HONDACRV2015": {
+    lx:13000, ex:13500, 'ex-l':14000
+  }
+  ,
+  "HONDACRV2016": {
+    lx:14500, ex:15000, 'ex-l':15500
+  }
+  ,
+  "HONDACRV2017": {
+    lx:16000, ex:16500, 'ex-l':17000
+  }
+  ,
+  "HONDACRV2018": {
+    lx:18000, ex:19000, 'ex-l':20000
+  }
+  ,
+  "HONDACRV2019": {
+    lx:18500, ex:19500, 'ex-l':20500
+  }
+  ,
+  "HONDACRV2020": {
+    lx:20000, ex:21000, 'ex-l':22000
+  }
+}
+;
+const hondaModelAliases = {
+  HONDACIVIC: ['CIVIC', 'CIV'],
+  HONDAACCORD: ['ACCORD', 'ACC'],
+  HONDACRV: ['CRV', 'CR-V', 'CR']
+}
+;
+let hondaHistoryList = loadHistory("honda");
+function hondaNormalize(text) {
+  return text.trim().replace(/\s+|-/g,'').toUpperCase();
+}
+function hondaDetectModel(userInput) {
+  const normalized = hondaNormalize(userInput);
+  for (const modelKey in hondaModelAliases) {
+    for (const alias of hondaModelAliases[modelKey]) {
+      if (normalized.includes(hondaNormalize(alias))) {
+        return modelKey;
+      }
+    }
+  }
+  return null;
+}
+function hondaClearInputs() {
+  document.getElementById('honda-modelInput').value = '';
+  document.getElementById('honda-yearInput').value = '';
+  document.getElementById('honda-modelInput').focus();
+}
+function hondaCheckPrice() {
+  const rawModel = document.getElementById('honda-modelInput').value.trim();
+  const yearRaw = document.getElementById('honda-yearInput').value.trim();
+  const outputDiv = document.getElementById('honda-output');
+  if (!rawModel) {
+    outputDiv.innerHTML = "<span class='error'>Please enter a model.</span>";
+    hondaClearInputs();
+    return;
+  }
+  const modelKey = hondaDetectModel(rawModel);
+  if (!modelKey) {
+    outputDiv.innerHTML = "<span class='error'>Model not recognized. Use Civic, Accord, or CR-V.</span>";
+    hondaClearInputs();
+    return;
+  }
+  // Longer/more specific trims must be checked before shorter ones that are
+  // substrings of them (e.g. "EX-L" contains "EX", "TYPE-R" is distinct from
+  // nothing but "HATCHBACK" is long) so a search for "EX-L" doesn't
+  // silently fall back to "EX" pricing.
+  const trims = ['HATCHBACK','TYPE-R','COUPE','SEDAN','EX-L','SI','LX','EX'];
+  let trimInput = '';
+  const normalizedInput = hondaNormalize(rawModel);
+  for (let t of trims) {
+    if (normalizedInput.includes(hondaNormalize(t))) {
+      trimInput = t.toLowerCase().replace(/\s|-/g,'');
+      break;
+    }
+  }
+  let results = [];
+  for (const key in hondaCarPrices) {
+    if (!key.startsWith(modelKey)) continue;
+    const year = key.replace(modelKey,'');
+    if (yearRaw && year !== yearRaw) continue;
+    const prices = hondaCarPrices[key];
+    let selectedPrices = {
+    }
+    ;
+    for (const trim in prices) {
+      const t = trim.toLowerCase().replace(/\s|-/g,'');
+      if (!trimInput || t === trimInput) selectedPrices[trim] = prices[trim];
+    }
+    if (Object.keys(selectedPrices).length === 0) continue;
+    let res = makePriceCards(
+    key.replace('HONDACIVIC','Civic').replace('HONDAACCORD','Accord').replace('HONDACRV','CR-V'),
+    selectedPrices
+    );
+    results.push(res);
+  }
+  if (results.length) {
+    outputDiv.innerHTML = results.join('<hr>');
+    hondaHistoryList.unshift(...results);
+    saveHistory("honda", hondaHistoryList);
+    hondaRenderHistory();
+  }
+  else {
+    outputDiv.innerHTML = "<span class='error'>No matching model/year/trim found.</span>";
+  }
+  hondaClearInputs();
+}
+function hondaRenderHistory() {
+  const historyDiv = document.getElementById('honda-historyList');
+  historyDiv.innerHTML = '';
+  hondaHistoryList.forEach(item => historyDiv.innerHTML += `<div class='history-item'>${item}</div>`);
+}
+function hondaClearHistory() {
+  hondaHistoryList = [];
+  clearSavedHistory("honda");
+  document.getElementById('honda-historyList').innerHTML = '';
+  document.getElementById('honda-output').innerHTML = "<span class='success'>History cleared.</span>";
+}
+function hondaToggleHistory() {
+  const historyDiv = document.getElementById('honda-history');
+  const btn = document.getElementById('honda-historyToggleBtn');
+  if (historyDiv.style.display === 'none' || historyDiv.style.display === '') {
+    historyDiv.style.display = 'block';
+    btn.textContent = 'Hide History';
+    hondaRenderHistory();
+  }
+  else {
+    historyDiv.style.display = 'none';
+    btn.textContent = 'Show History';
+  }
+}
+document.getElementById('honda-modelInput').addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    document.getElementById('honda-yearInput').focus();
+  }
+}
+);
+document.getElementById('honda-yearInput').addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    hondaCheckPrice();
+  }
+}
+);
+/* ===================== MERCEDES LOGIC ===================== */
+const mercCarPrices = {
+  "C250": {
+    2011: {
+      normal:7900,coupe:8900
+    }
+    ,2012: {
+      normal:9500,coupe:10500
+    }
+    ,2013: {
+      normal:10000,coupe:11000
+    }
+    ,2014: {
+      normal:10500,coupe:11500
+    }
+  }
+  ,
+  "C300": {
+    2008: {
+      normal:5500
+    }
+    ,2009: {
+      normal:6200
+    }
+    ,2010: {
+      normal:6900
+    }
+    ,2014: {
+      normal:10800
+    }
+    ,2015: {
+      normal:13200,coupe:14100
+    }
+    ,2016: {
+      normal:14100,coupe:15600
+    }
+    ,2017: {
+      normal:17500,coupe:20800
+    }
+    ,2018: {
+      normal:18400,coupe:21800
+    }
+    ,2019: {
+      normal:21300,coupe:27100
+    }
+  }
+  ,
+  "C43": {
+    2017: {
+      coupe:27100
+    }
+    ,2018: {
+      coupe:31900
+    }
+  }
+  ,
+  "E300": {
+    2009: {
+      normal:6000
+    }
+    ,2010: {
+      normal:8800
+    }
+    ,2011: {
+      normal:9800
+    }
+    ,2012: {
+      normal:10800
+    }
+    ,2013: {
+      normal:12700
+    }
+    ,2014: {
+      normal:13600
+    }
+    ,2015: {
+      normal:14600
+    }
+    ,2016: {
+      normal:16000
+    }
+    ,2017: {
+      normal:19400
+    }
+    ,2018: {
+      normal:21300
+    }
+    ,2019: {
+      normal:25200
+    }
+  }
+  ,
+  "E400": {
+    2016: {
+      normal:16500
+    }
+    ,2017: {
+      normal:25200
+    }
+    ,2018: {
+      normal:30900
+    }
+  }
+  ,
+  "E450": {
+    2019: {
+      normal:39600
+    }
+    ,2020: {
+      normal:41500
+    }
+  }
+  ,
+  "CLS350": {
+    2012: {
+      normal:12200
+    }
+    ,2014: {
+      normal:16500
+    }
+  }
+  ,
+  "CLS550": {
+    2012: {
+      normal:14600
+    }
+    ,2014: {
+      normal:18400
+    }
+    ,2016: {
+      normal:22300
+    }
+  }
+  ,
+  "CLS400": {
+    2016: {
+      normal:20400
+    }
+  }
+  ,
+  "CLA250": {
+    2014: {
+      normal:11200
+    }
+    ,2015: {
+      normal:12200
+    }
+    ,2016: {
+      normal:13600
+    }
+    ,2017: {
+      normal:14600
+    }
+    ,2018: {
+      normal:17000
+    }
+  }
+  ,
+  "CLA45": {
+    2016: {
+      normal:33100
+    }
+    ,2018: {
+      normal:36200
+    }
+  }
+  ,
+  "GLA250": {
+    2015: {
+      normal:14100
+    }
+    ,2016: {
+      normal:14600
+    }
+    ,2017: {
+      normal:16500
+    }
+    ,2018: {
+      normal:20400
+    }
+  }
+}
+;
+const mercModelAliases = {
+  "C250": ["C250","C-250","C 250"],
+  "C300": ["C300","C-300","C 300"],
+  "C43": ["C43","C-43","C 43"],
+  "E300": ["E300","E-300","E 300"],
+  "E400": ["E400","E-400","E 400"],
+  "E450": ["E450","E-450","E 450"],
+  "CLS350": ["CLS350","CLS-350","CLS 350"],
+  "CLS550": ["CLS550","CLS-550","CLS 550"],
+  "CLS400": ["CLS400","CLS-400","CLS 400"],
+  "CLA250": ["CLA250","CLA-250","CLA 250"],
+  "CLA45": ["CLA45","CLA-45","CLA 45"],
+  "GLA250": ["GLA250","GLA-250","GLA 250"]
+}
+;
+let mercHistoryList = loadHistory("mercedes");
+function mercNormalize(text) {
+  return text.replace(/[\s-]/g,'').toUpperCase();
+}
+function mercDetectModel(userInput) {
+  const inputNorm = mercNormalize(userInput);
+  // Flatten to (alias, key) pairs and check longest alias first so a more
+  // specific code (e.g. "CLA45") is matched before a shorter one that could
+  // also appear inside it.
+  const pairs = [];
+  for (const key in mercModelAliases) {
+    for (const alias of mercModelAliases[key]) pairs.push([mercNormalize(alias), key]);
+  }
+  pairs.sort((a, b) => b[0].length - a[0].length);
+  for (const [aliasNorm, key] of pairs) {
+    if (inputNorm.includes(aliasNorm)) return key;
+  }
+  return null;
+}
+function mercClearInputs() {
+  document.getElementById('merc-modelInput').value = '';
+  document.getElementById('merc-yearInput').value = '';
+  document.getElementById('merc-modelInput').focus();
+}
+function mercCheckPrice() {
+  const rawModel = document.getElementById('merc-modelInput').value;
+  const yearRaw = document.getElementById('merc-yearInput').value;
+  const outputDiv = document.getElementById('merc-output');
+  if (!rawModel || !yearRaw) {
+    outputDiv.innerHTML = "<span class='error'>Please enter both model and year.</span>";
+    mercClearInputs();
+    return;
+  }
+  const modelKey = mercDetectModel(rawModel);
+  const year = parseInt(yearRaw);
+  if (!modelKey || isNaN(year)) {
+    outputDiv.innerHTML = "<span class='error'>Invalid model or year. Try again.</span>";
+    mercClearInputs();
+    return;
+  }
+  if (mercCarPrices[modelKey] && mercCarPrices[modelKey][year]) {
+    const prices = mercCarPrices[modelKey][year];
+    const result = makePriceCards(`${modelKey} ${year}`, prices);
+    outputDiv.innerHTML = result;
+    mercHistoryList.unshift(result);
+    saveHistory("mercedes", mercHistoryList);
+    mercRenderHistory();
+    mercClearInputs();
+  }
+  else {
+    outputDiv.innerHTML = "<span class='error'>Model or year not found. Please try again.</span>";
+    mercClearInputs();
+  }
+}
+function mercToggleHistory() {
+  const historyDiv = document.getElementById('merc-history');
+  const btn = document.getElementById('merc-historyToggleBtn');
+  if (historyDiv.style.display === 'none' || historyDiv.style.display === '') {
+    historyDiv.style.display = 'block';
+    btn.textContent = 'Hide History';
+    mercRenderHistory();
+  }
+  else {
+    historyDiv.style.display = 'none';
+    btn.textContent = 'Show History';
+  }
+}
+function mercRenderHistory() {
+  const historyDiv = document.getElementById('merc-historyList');
+  historyDiv.innerHTML = '';
+  mercHistoryList.forEach(item => historyDiv.innerHTML += `<div class='history-item'>${item}</div>`);
+}
+function mercClearHistory() {
+  mercHistoryList = [];
+  clearSavedHistory("mercedes");
+  document.getElementById('merc-historyList').innerHTML = '';
+  document.getElementById('merc-output').innerHTML = "<span class='success'>History cleared.</span>";
+}
+document.getElementById('merc-modelInput').addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    document.getElementById('merc-yearInput').focus();
+  }
+}
+);
+document.getElementById('merc-yearInput').addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    mercCheckPrice();
+  }
+}
+);
+/* ===================== RANGE ROVER LOGIC ===================== */
+const rrCarPrices = {
+  "RANGROVERSPORT": {
+    "2005 V8": 5600, "2006 V8": 5200, "2007 V8": 5500, "2008 V8": 5700,
+    "2009 V8": 6900, "2010 V8": 7900, "2011 V8": 9800, "2012 V8": 10800,
+    "2013 V8": 11700, "2014 V6": 20400, "2014 V8": 23700, "2015 V6": 21800,
+    "2015 V8": 25300, "2016 V6": 24200, "2016 V8": 28100, "2017 V6": 25200,
+    "2017 V8": 29200, "2018 V6": 36700, "2018 V8": 42600, "2019 V6": 38200,
+    "2019 V8": 44300, "2020 V6": 41900, "2020 V8": 48600, "2021 V6": 45500,
+    "2021 V8": 52800
+  }
+  ,
+  "RANGROVEREVOQUE": {
+    "2012": 8800, "2013": 10300, "2014": 11500, "2015": 13600,
+    "2016": 14400, "2017": 15100, "2018": 16000, "2019": 17900,
+    "2020": 24900, "2021": 28400
+  }
+  ,
+  "LANDROVERDISCOVERY": {
+    "2017": 22300, "2018": 26100, "2019": 25900, "2020": 27600,
+    "2021": 31600
+  }
+  ,
+  "VELAR": {
+    "2018 V6": 31900, "2019 V6": 32800, "2020 V6": 35500,
+    "2020 V8": 41200, "2021 V6": 42800, "2021 V8": 49600
+  }
+  ,
+  "LANDROVERDEFENDER": {
+    "2020": 65800, "2021": 70400, "2022": 75000, "2023": 79600
+  }
+  ,
+  "RANGROVERVOGUE": {
+    "2003": 2250, "2004": 2700, "2005": 3150, "2006": 4900, "2007": 5250,
+    "2008": 5600, "2009": 6000, "2010": 5500, "2011": 8800, "2012": 10800,
+    "2013": 22300, "2014": 25700, "2015": 30000, "2016": 32900,
+    "2017": 36700, "2018 V6": 46500, "2018 V8": 53900, "2019 V6": 46500,
+    "2019 V8": 53900, "2020 V6": 49200, "2020 V8": 57100,
+    "2021 V6": 52000, "2021 V8": 60300
+  }
+}
+;
+const rrModelAliases = {
+  RANGROVERSPORT: ['SPORT'],
+  RANGROVEREVOQUE: ['EVOQUE'],
+  LANDROVERDISCOVERY: ['DISCOVERY', 'DISC'],
+  VELAR: ['VELAR'],
+  LANDROVERDEFENDER: ['DEFENDER'],
+  RANGROVERVOGUE: ['VOGUE']
+}
+;
+let rrHistoryList = loadHistory("rangerover");
+function rrNormalize(text) {
+  return text.trim().replace(/\s+|-/g,'').toUpperCase();
+}
+function rrDetectModel(userInput) {
+  const normalized = rrNormalize(userInput);
+  for (const modelKey in rrModelAliases) {
+    for (const alias of rrModelAliases[modelKey]) {
+      if (normalized.includes(rrNormalize(alias))) return modelKey;
+    }
+  }
+  return null;
+}
+function rrClearInputs() {
+  document.getElementById('rr-modelInput').value = '';
+  document.getElementById('rr-yearInput').value = '';
+  document.getElementById('rr-modelInput').focus();
+}
+function rrCheckPrice() {
+  const rawModel = document.getElementById('rr-modelInput').value.trim();
+  const yearRaw = document.getElementById('rr-yearInput').value.trim();
+  const outputDiv = document.getElementById('rr-output');
+  if (!rawModel) {
+    outputDiv.innerHTML = "<span class='error'>Please enter a model.</span>";
+    rrClearInputs();
+    return;
+  }
+  const modelKey = rrDetectModel(rawModel);
+  if (!modelKey) {
+    outputDiv.innerHTML = "<span class='error'>Model not recognized.</span>";
+    rrClearInputs();
+    return;
+  }
+  const normalizedInput = rrNormalize(rawModel);
+  let trimInput = '';
+  if (normalizedInput.includes('V6')) trimInput = 'V6';
+  if (normalizedInput.includes('V8')) trimInput = 'V8';
+  let results = [];
+  for (const key in rrCarPrices[modelKey]) {
+    const parts = key.split(' ');
+    const year = parts[0];
+    const engine = parts[1] || '';
+    if (yearRaw && year !== yearRaw) continue;
+    if (trimInput && engine !== trimInput) continue;
+    results.push(`<div class="price-card"><div class="label">${modelKey.replace(/RANGROVER|LANDROVER/g,'').trim()} ${key}</div><div class="value">${formatPrice(rrCarPrices[modelKey][key])}</div></div>`);
+  }
+  if (results.length) {
+    const combined = `<div class='result-title'>Estimated pricing for <strong>${modelKey.replace(/RANGROVER|LANDROVER/g,'').trim()}</strong></div><div class='price-grid'>${results.join('')}</div>`;
+    outputDiv.innerHTML = combined;
+    rrHistoryList.unshift(combined);
+    saveHistory("rangerover", rrHistoryList);
+    rrRenderHistory();
+  }
+  else {
+    outputDiv.innerHTML = "<span class='error'>No matching model/year/trim found.</span>";
+  }
+  rrClearInputs();
+}
+function rrRenderHistory() {
+  const historyDiv = document.getElementById('rr-historyList');
+  historyDiv.innerHTML = '';
+  rrHistoryList.forEach(item => historyDiv.innerHTML += `<div class='history-item'>${item}</div>`);
+}
+function rrClearHistory() {
+  rrHistoryList = [];
+  clearSavedHistory("rangerover");
+  document.getElementById('rr-historyList').innerHTML = '';
+  document.getElementById('rr-output').innerHTML = "<span class='success'>History cleared.</span>";
+}
+function rrToggleHistory() {
+  const historyDiv = document.getElementById('rr-history');
+  const btn = document.getElementById('rr-historyToggleBtn');
+  if (historyDiv.style.display === 'none' || historyDiv.style.display === '') {
+    historyDiv.style.display = 'block';
+    btn.textContent = 'Hide History';
+    rrRenderHistory();
+  }
+  else {
+    historyDiv.style.display = 'none';
+    btn.textContent = 'Show History';
+  }
+}
+document.getElementById('rr-modelInput').addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    document.getElementById('rr-yearInput').focus();
+  }
+}
+);
+document.getElementById('rr-yearInput').addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    rrCheckPrice();
+  }
+}
+);
+/* ===================== HYUNDAI LOGIC ===================== */
+// Estimates reflect the Lebanese used-car market (USD cash prices), checked
+// against comparable listings for each model/year (olx.com.lb, dubizzle.com.lb)
+// and revised down from an earlier pass that ran noticeably above market
+// (e.g. Elantra 2020 corrected from $15,000 to $13,200).
+const hyundaiCarPrices = {
+  "ELANTRA": {
+    2011: {
+      normal:5500
+    }
+    ,2012: {
+      normal:6100
+    }
+    ,2013: {
+      normal:6700,gt:7200
+    }
+    ,2014: {
+      normal:7300,gt:7800
+    }
+    ,
+    2015: {
+      normal:8500,gt:9100
+    }
+    ,2016: {
+      normal:9700,gt:10400
+    }
+    ,2017: {
+      normal:10500,gt:11300
+    }
+    ,
+    2018: {
+      normal:11300,gt:12100
+    }
+    ,2019: {
+      normal:12200,gt:13100
+    }
+    ,2020: {
+      normal:13200,gt:14200
+    }
+    ,
+    2021: {
+      normal:15500
+    }
+    ,2022: {
+      normal:18000
+    }
+    ,2023: {
+      normal:20000
+    }
+    ,2024: {
+      normal:22000
+    }
+  }
+  ,
+  "TUCSON": {
+    2011: {
+      normal:8000
+    }
+    ,2012: {
+      normal:8900
+    }
+    ,2013: {
+      normal:9800
+    }
+    ,2014: {
+      normal:11000
+    }
+    ,
+    2015: {
+      normal:12200
+    }
+    ,2016: {
+      normal:13300
+    }
+    ,2017: {
+      normal:14400,sport:15700
+    }
+    ,
+    2018: {
+      normal:15500,sport:16900
+    }
+    ,2019: {
+      normal:16800,sport:18300
+    }
+    ,2020: {
+      normal:19000,sport:20700
+    }
+    ,
+    2021: {
+      normal:21800,sport:23800
+    }
+    ,2022: {
+      normal:25000
+    }
+    ,2023: {
+      normal:28500
+    }
+    ,2024: {
+      normal:32000
+    }
+  }
+  ,
+  "SANTAFE": {
+    2011: {
+      normal:9200
+    }
+    ,2012: {
+      normal:10200
+    }
+    ,2013: {
+      normal:11000,xl:11900
+    }
+    ,2014: {
+      normal:11900,xl:12900
+    }
+    ,
+    2015: {
+      normal:13200,xl:14300
+    }
+    ,2016: {
+      normal:14600,xl:15800
+    }
+    ,2017: {
+      normal:16000,xl:17300
+    }
+    ,
+    2018: {
+      normal:17800,xl:19200
+    }
+    ,2019: {
+      normal:20000
+    }
+    ,2020: {
+      normal:22800
+    }
+    ,2021: {
+      normal:26000
+    }
+    ,
+    2022: {
+      normal:29500
+    }
+    ,2023: {
+      normal:33000
+    }
+  }
+  ,
+  "ACCENT": {
+    2011: {
+      normal:3900
+    }
+    ,2012: {
+      normal:4400,hatchback:4300
+    }
+    ,2013: {
+      normal:4900,hatchback:4800
+    }
+    ,
+    2014: {
+      normal:5400,hatchback:5300
+    }
+    ,2015: {
+      normal:6000,hatchback:5900
+    }
+    ,2016: {
+      normal:6700,hatchback:6600
+    }
+    ,
+    2017: {
+      normal:7400,hatchback:7300
+    }
+    ,2018: {
+      normal:8200
+    }
+    ,2019: {
+      normal:9000
+    }
+    ,2020: {
+      normal:10000
+    }
+    ,
+    2021: {
+      normal:11200
+    }
+  }
+  ,
+  "SONATA": {
+    2011: {
+      normal:6300
+    }
+    ,2012: {
+      normal:7000
+    }
+    ,2013: {
+      normal:7700
+    }
+    ,2014: {
+      normal:8600
+    }
+    ,
+    2015: {
+      normal:9600,sport:10700
+    }
+    ,2016: {
+      normal:10600,sport:11800
+    }
+    ,2017: {
+      normal:11700,sport:13000
+    }
+    ,
+    2018: {
+      normal:13000,sport:14400
+    }
+    ,2019: {
+      normal:14400,sport:16000
+    }
+    ,2020: {
+      normal:16600
+    }
+    ,2021: {
+      normal:19200
+    }
+  }
+  ,
+  "VELOSTER": {
+    2012: {
+      normal:7800
+    }
+    ,2013: {
+      normal:8500
+    }
+    ,2014: {
+      normal:9500
+    }
+    ,2015: {
+      normal:10500
+    }
+    ,
+    2016: {
+      normal:11500
+    }
+    ,2017: {
+      normal:12800
+    }
+    ,2018: {
+      normal:14200
+    }
+    ,2019: {
+      normal:15800
+    }
+    ,2020: {
+      normal:17500
+    }
+  }
+  ,
+  "KONA": {
+    2018: {
+      normal:14500
+    }
+    ,2019: {
+      normal:16000
+    }
+    ,2020: {
+      normal:18000
+    }
+    ,2021: {
+      normal:20500
+    }
+    ,
+    2022: {
+      normal:23500
+    }
+    ,2023: {
+      normal:26500
+    }
+    ,2024: {
+      normal:29500
+    }
+  }
+  ,
+  "I10": {
+    2010: {
+      normal:4000
+    }
+    ,2012: {
+      normal:4600
+    }
+    ,2014: {
+      normal:5300
+    }
+    ,2016: {
+      normal:6200
+    }
+    ,
+    2018: {
+      normal:7300
+    }
+    ,2020: {
+      normal:8600
+    }
+    ,2022: {
+      normal:10200
+    }
+  }
+  ,
+  "AZERA": {
+    2012: {
+      normal:10500
+    }
+    ,2013: {
+      normal:11500
+    }
+    ,2014: {
+      normal:13000
+    }
+    ,2015: {
+      normal:14500
+    }
+    ,
+    2016: {
+      normal:16000
+    }
+    ,2017: {
+      normal:17500
+    }
+  }
+  ,
+  "CRETA": {
+    2017: {
+      normal:11500
+    }
+    ,2018: {
+      normal:12800
+    }
+    ,2019: {
+      normal:14200
+    }
+    ,
+    2020: {
+      normal:16000
+    }
+    ,2021: {
+      normal:18500
+    }
+    ,2022: {
+      normal:21500
+    }
+    ,2023: {
+      normal:24500
+    }
+  }
+  ,
+  "H1": {
+    2010: {
+      normal:9500
+    }
+    ,2012: {
+      normal:11500
+    }
+    ,2014: {
+      normal:14000
+    }
+    ,
+    2016: {
+      normal:17500
+    }
+    ,2018: {
+      normal:21500
+    }
+    ,2020: {
+      normal:26500
+    }
+    ,2022: {
+      normal:33500
+    }
+  }
+  ,
+  "I20": {
+    2010: {
+      normal:4300
+    }
+    ,2012: {
+      normal:5000
+    }
+    ,2014: {
+      normal:5900
+    }
+    ,
+    2016: {
+      normal:7000
+    }
+    ,2018: {
+      normal:8600
+    }
+    ,2020: {
+      normal:10800
+    }
+  }
+  ,
+  "PALISADE": {
+    2020: {
+      normal:32000
+    }
+    ,2021: {
+      normal:35500
+    }
+    ,2022: {
+      normal:39000
+    }
+    ,2023: {
+      normal:43000
+    }
+  }
+  ,
+  "VENUE": {
+    2020: {
+      normal:16000
+    }
+    ,2021: {
+      normal:18000
+    }
+    ,2022: {
+      normal:20200
+    }
+    ,2023: {
+      normal:22500
+    }
+  }
+}
+;
+const hyundaiModelAliases = {
+  SANTAFE: ['SANTA FE','SANTAFE'],
+  ELANTRA: ['ELANTRA'],
+  TUCSON: ['TUCSON'],
+  ACCENT: ['ACCENT'],
+  SONATA: ['SONATA'],
+  VELOSTER: ['VELOSTER'],
+  KONA: ['KONA'],
+  I10: ['I10','I 10','I-10'],
+  AZERA: ['AZERA'],
+  CRETA: ['CRETA'],
+  H1: ['H1','H-1','GRAND STAREX','STAREX'],
+  I20: ['I20','I 20','I-20'],
+  PALISADE: ['PALISADE'],
+  VENUE: ['VENUE']
+}
+;
+const hyModelLabels = {
+  ELANTRA:'Elantra', TUCSON:'Tucson', SANTAFE:'Santa Fe', ACCENT:'Accent',
+  SONATA:'Sonata', VELOSTER:'Veloster', KONA:'Kona', I10:'i10', AZERA:'Azera',
+  CRETA:'Creta', H1:'H1', I20:'i20', PALISADE:'Palisade', VENUE:'Venue'
+}
+;
+let hyHistoryList = loadHistory("hyundai");
+function hyNormalize(text) {
+  return text.trim().replace(/\s+|-/g,'').toUpperCase();
+}
+function hyDetectModel(userInput) {
+  const normalized = hyNormalize(userInput);
+  const pairs = [];
+  for (const key in hyundaiModelAliases) {
+    for (const alias of hyundaiModelAliases[key]) pairs.push([hyNormalize(alias), key]);
+  }
+  pairs.sort((a, b) => b[0].length - a[0].length);
+  for (const [aliasNorm, key] of pairs) {
+    if (normalized.includes(aliasNorm)) return key;
+  }
+  return null;
+}
+function hyClearInputs() {
+  document.getElementById('hy-modelInput').value = '';
+  document.getElementById('hy-yearInput').value = '';
+  document.getElementById('hy-modelInput').focus();
+}
+function hyCheckPrice() {
+  const rawModel = document.getElementById('hy-modelInput').value.trim();
+  const yearRaw = document.getElementById('hy-yearInput').value.trim();
+  const outputDiv = document.getElementById('hy-output');
+  if (!rawModel) {
+    outputDiv.innerHTML = "<span class='error'>Please enter a model.</span>";
+    hyClearInputs();
+    return;
+  }
+  const modelKey = hyDetectModel(rawModel);
+  if (!modelKey) {
+    outputDiv.innerHTML = "<span class='error'>Model not recognized. Try Elantra, Tucson, Santa Fe, Accent, Sonata, Veloster, Kona, Creta, H1, i20, i10, Palisade, Venue, or Azera.</span>";
+    hyClearInputs();
+    return;
+  }
+  const year = yearRaw ? parseInt(yearRaw) : null;
+  if (yearRaw && isNaN(year)) {
+    outputDiv.innerHTML = "<span class='error'>Please enter a valid year.</span>";
+    hyClearInputs();
+    return;
+  }
+  let results = [];
+  for (const yr in hyundaiCarPrices[modelKey]) {
+    if (year && parseInt(yr) !== year) continue;
+    results.push(makePriceCards(`${hyModelLabels[modelKey]} ${yr}`, hyundaiCarPrices[modelKey][yr]));
+  }
+  if (results.length) {
+    outputDiv.innerHTML = results.join('<hr>');
+    hyHistoryList.unshift(...results);
+    saveHistory("hyundai", hyHistoryList);
+    hyRenderHistory();
+  }
+  else {
+    outputDiv.innerHTML = "<span class='error'>No matching model/year found.</span>";
+  }
+  hyClearInputs();
+}
+function hyRenderHistory() {
+  const historyDiv = document.getElementById('hy-historyList');
+  historyDiv.innerHTML = '';
+  hyHistoryList.forEach(item => historyDiv.innerHTML += `<div class='history-item'>${item}</div>`);
+}
+function hyClearHistory() {
+  hyHistoryList = [];
+  clearSavedHistory("hyundai");
+  document.getElementById('hy-historyList').innerHTML = '';
+  document.getElementById('hy-output').innerHTML = "<span class='success'>History cleared.</span>";
+}
+function hyToggleHistory() {
+  const historyDiv = document.getElementById('hy-history');
+  const btn = document.getElementById('hy-historyToggleBtn');
+  if (historyDiv.style.display === 'none' || historyDiv.style.display === '') {
+    historyDiv.style.display = 'block';
+    btn.textContent = 'Hide History';
+    hyRenderHistory();
+  }
+  else {
+    historyDiv.style.display = 'none';
+    btn.textContent = 'Show History';
+  }
+}
+document.getElementById('hy-modelInput').addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    document.getElementById('hy-yearInput').focus();
+  }
+}
+);
+document.getElementById('hy-yearInput').addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    hyCheckPrice();
+  }
+}
+);
+/* ===================== TOYOTA LOGIC ===================== */
+// Estimates reflect the Lebanese used-car market (USD cash prices). Land
+// Cruiser and Prado carry a strong premium locally versus US resale values.
+// GXR/VXR (Land Cruiser) and GX/VX/VXR (Prado, Fortuner) use the trim names
+// actually used in the Lebanese/Gulf market rather than US trim names.
+const toyotaCarPrices = {
+  "COROLLA": {
+    2010: {
+      normal:8800
+    }
+    ,2011: {
+      normal:9300
+    }
+    ,2012: {
+      normal:9800
+    }
+    ,2013: {
+      normal:10500
+    }
+    ,
+    2014: {
+      normal:11500
+    }
+    ,2015: {
+      normal:12500
+    }
+    ,2016: {
+      normal:13500
+    }
+    ,2017: {
+      normal:14000
+    }
+    ,
+    2018: {
+      normal:14600
+    }
+    ,2019: {
+      normal:15800,hatchback:15600
+    }
+    ,2020: {
+      normal:17200,hatchback:17000
+    }
+    ,
+    2021: {
+      normal:19200,hatchback:19000
+    }
+    ,2022: {
+      normal:21200,hatchback:21000
+    }
+    ,
+    2023: {
+      normal:23200,hatchback:23000
+    }
+    ,2024: {
+      normal:25200,hatchback:25000
+    }
+  }
+  ,
+  "CAMRY": {
+    2010: {
+      normal:10000
+    }
+    ,2011: {
+      normal:10700
+    }
+    ,2012: {
+      normal:11500
+    }
+    ,2013: {
+      normal:12500
+    }
+    ,
+    2014: {
+      normal:14000
+    }
+    ,2015: {
+      normal:15200,se:16400
+    }
+    ,2016: {
+      normal:16400,se:17700
+    }
+    ,
+    2017: {
+      normal:17600,se:19000
+    }
+    ,2018: {
+      normal:19300,se:20800
+    }
+    ,2019: {
+      normal:21300,se:23000
+    }
+    ,
+    2020: {
+      normal:23300,se:25200
+    }
+    ,2021: {
+      normal:25800,se:27900
+    }
+    ,2022: {
+      normal:28300,se:30600
+    }
+    ,
+    2023: {
+      normal:31300,se:33800
+    }
+  }
+  ,
+  "RAV4": {
+    2010: {
+      normal:9000
+    }
+    ,2011: {
+      normal:9700
+    }
+    ,2012: {
+      normal:11000
+    }
+    ,2013: {
+      normal:12300,xle:13400
+    }
+    ,
+    2014: {
+      normal:13500,xle:14700
+    }
+    ,2015: {
+      normal:15000,xle:16400
+    }
+    ,2016: {
+      normal:17000,xle:18500
+    }
+    ,
+    2017: {
+      normal:18500,xle:20200
+    }
+    ,2018: {
+      normal:20500,xle:22400
+    }
+    ,2019: {
+      normal:23000,xle:25100
+    }
+    ,
+    2020: {
+      normal:25500,xle:27800
+    }
+    ,2021: {
+      normal:28500,xle:31100
+    }
+    ,2022: {
+      normal:31000,xle:33800
+    }
+    ,
+    2023: {
+      normal:34000,xle:37100
+    }
+  }
+  ,
+  "YARIS": {
+    2010: {
+      normal:6200
+    }
+    ,2011: {
+      normal:6600
+    }
+    ,2012: {
+      normal:7200,hatchback:6900
+    }
+    ,2013: {
+      normal:7700,hatchback:7400
+    }
+    ,
+    2014: {
+      normal:8500,hatchback:8200
+    }
+    ,2015: {
+      normal:9200,hatchback:8800
+    }
+    ,2016: {
+      normal:9900,hatchback:9500
+    }
+    ,
+    2017: {
+      normal:10700,hatchback:10300
+    }
+    ,2018: {
+      normal:11700,hatchback:11200
+    }
+    ,2019: {
+      normal:12700,hatchback:12200
+    }
+    ,
+    2020: {
+      normal:13700,hatchback:13200
+    }
+  }
+  ,
+  "HILUX": {
+    2010: {
+      normal:13500,doublecab:15500
+    }
+    ,2012: {
+      normal:15500,doublecab:17800
+    }
+    ,2014: {
+      normal:18500,doublecab:21300
+    }
+    ,
+    2015: {
+      normal:20000,doublecab:23000
+    }
+    ,2016: {
+      normal:21500,doublecab:24700
+    }
+    ,2017: {
+      normal:23200,doublecab:26700
+    }
+    ,
+    2018: {
+      normal:25300,doublecab:29100
+    }
+    ,2019: {
+      normal:27300,doublecab:31400
+    }
+    ,2020: {
+      normal:29800,doublecab:34300
+    }
+    ,
+    2021: {
+      normal:32300,doublecab:37100
+    }
+    ,2022: {
+      normal:35300,doublecab:40600
+    }
+  }
+  ,
+  "PRADO": {
+    2008: {
+      gx:15500
+    }
+    ,2010: {
+      gx:18500
+    }
+    ,2012: {
+      gx:22500,vx:25900,vxr:29300
+    }
+    ,2014: {
+      gx:26500,vx:30500,vxr:34500
+    }
+    ,
+    2016: {
+      gx:31500,vx:36200,vxr:41000
+    }
+    ,2017: {
+      gx:34500,vx:39700,vxr:44900
+    }
+    ,2018: {
+      gx:38500,vx:44300,vxr:50100
+    }
+    ,
+    2019: {
+      gx:42500,vx:48900,vxr:55300
+    }
+    ,2020: {
+      gx:46500,vx:53500,vxr:60500
+    }
+    ,2021: {
+      gx:50500,vx:58100,vxr:65700
+    }
+    ,
+    2022: {
+      gx:54500,vx:62700,vxr:70900
+    }
+  }
+  ,
+  "LANDCRUISER": {
+    2008: {
+      gxr:25000,vxr:30000
+    }
+    ,2010: {
+      gxr:30500,vxr:36600
+    }
+    ,2012: {
+      gxr:38000,vxr:45600
+    }
+    ,
+    2014: {
+      gxr:47500,vxr:57000
+    }
+    ,2016: {
+      gxr:57000,vxr:68400
+    }
+    ,2017: {
+      gxr:62500,vxr:75000
+    }
+    ,
+    2018: {
+      gxr:70000,vxr:84000
+    }
+    ,2019: {
+      gxr:77500,vxr:93000
+    }
+    ,2020: {
+      gxr:87000,vxr:104400
+    }
+    ,
+    2021: {
+      gxr:98500,vxr:118200
+    }
+    ,2022: {
+      gxr:112000,vxr:134400
+    }
+  }
+  ,
+  "FJCRUISER": {
+    2007: {
+      normal:13500
+    }
+    ,2008: {
+      normal:14500
+    }
+    ,2009: {
+      normal:15500
+    }
+    ,2010: {
+      normal:17000
+    }
+    ,
+    2011: {
+      normal:18500
+    }
+    ,2012: {
+      normal:20500
+    }
+    ,2013: {
+      normal:22500
+    }
+    ,2014: {
+      normal:24500
+    }
+  }
+  ,
+  "FORTUNER": {
+    2016: {
+      gx:23500,vx:26300
+    }
+    ,2017: {
+      gx:25000,vx:28000
+    }
+    ,2018: {
+      gx:27000,vx:30200
+    }
+    ,2019: {
+      gx:29000,vx:32500
+    }
+    ,
+    2020: {
+      gx:31500,vx:35300
+    }
+    ,2021: {
+      gx:34500,vx:38600
+    }
+    ,2022: {
+      gx:38000,vx:42600
+    }
+    ,2023: {
+      gx:41500,vx:46500
+    }
+  }
+  ,
+  "HIGHLANDER": {
+    2010: {
+      normal:13500
+    }
+    ,2012: {
+      normal:15500
+    }
+    ,2014: {
+      normal:18000
+    }
+    ,2016: {
+      normal:21000
+    }
+    ,
+    2018: {
+      normal:25000,limited:27500
+    }
+    ,2020: {
+      normal:29500,limited:32500
+    }
+    ,2022: {
+      normal:35500,limited:39000
+    }
+  }
+  ,
+  "4RUNNER": {
+    2010: {
+      normal:14500
+    }
+    ,2012: {
+      normal:16500
+    }
+    ,2014: {
+      normal:19000
+    }
+    ,2016: {
+      normal:22500
+    }
+    ,
+    2018: {
+      normal:27000
+    }
+    ,2020: {
+      normal:32000
+    }
+    ,2022: {
+      normal:37500
+    }
+  }
+  ,
+  "LANDCRUISERPICKUP": {
+    2010: {
+      normal:21000
+    }
+    ,2012: {
+      normal:25000
+    }
+    ,2014: {
+      normal:30500
+    }
+    ,
+    2016: {
+      normal:36500
+    }
+    ,2018: {
+      normal:44000
+    }
+    ,2020: {
+      normal:53000
+    }
+    ,2022: {
+      normal:63000
+    }
+  }
+  ,
+  "AVALON": {
+    2010: {
+      normal:11500
+    }
+    ,2012: {
+      normal:13500
+    }
+    ,2014: {
+      normal:16000
+    }
+    ,
+    2016: {
+      normal:19500
+    }
+    ,2018: {
+      normal:24000
+    }
+    ,2019: {
+      normal:27000
+    }
+    ,2020: {
+      normal:30000
+    }
+    ,2021: {
+      normal:33000
+    }
+    ,2022: {
+      normal:36000
+    }
+  }
+  ,
+  "CHR": {
+    2018: {
+      normal:16500
+    }
+    ,2019: {
+      normal:18500
+    }
+    ,2020: {
+      normal:20800
+    }
+    ,
+    2021: {
+      normal:23200
+    }
+    ,2022: {
+      normal:25500
+    }
+    ,2023: {
+      normal:27800
+    }
+  }
+  ,
+  "COROLLACROSS": {
+    2021: {
+      normal:21500
+    }
+    ,2022: {
+      normal:23800
+    }
+    ,2023: {
+      normal:26000
+    }
+    ,2024: {
+      normal:28200
+    }
+  }
+  ,
+  "RUSH": {
+    2018: {
+      normal:14500
+    }
+    ,2019: {
+      normal:16000
+    }
+    ,2020: {
+      normal:17800
+    }
+    ,
+    2021: {
+      normal:19800
+    }
+    ,2022: {
+      normal:21800
+    }
+    ,2023: {
+      normal:23800
+    }
+  }
+}
+;
+// PRADO's aliases must win over the generic LAND CRUISER aliases when both
+// phrases are present ("Land Cruiser Prado"), since the Prado is a distinct,
+// cheaper model. The Land Cruiser Pickup (70-series) is also distinct from
+// the 200/300-series wagon and must be matched before the generic "Land
+// Cruiser" alias for the same reason. Corolla Cross must win over the plain
+// Corolla alias. Rather than relying on object insertion order, every alias
+// across every model is flattened and sorted by length so the longest, most
+// specific phrase is always tested first.
+const toyotaModelAliases = {
+  PRADO: ['LAND CRUISER PRADO','LANDCRUISER PRADO','PRADO'],
+  LANDCRUISERPICKUP: ['LAND CRUISER PICKUP','LANDCRUISER PICKUP','LC PICKUP','LAND CRUISER 70','LANDCRUISER70','LC79','LC78','LC71','LC70'],
+  LANDCRUISER: ['LAND CRUISER','LANDCRUISER','LC200','LC300'],
+  FJCRUISER: ['FJ CRUISER','FJ-CRUISER','FJCRUISER'],
+  FORTUNER: ['FORTUNER'],
+  HIGHLANDER: ['HIGHLANDER'],
+  '4RUNNER': ['4RUNNER','4-RUNNER','4 RUNNER'],
+  RAV4: ['RAV4','RAV-4','RAV 4'],
+  COROLLACROSS: ['COROLLA CROSS','COROLLACROSS'],
+  COROLLA: ['COROLLA'],
+  CAMRY: ['CAMRY'],
+  AVALON: ['AVALON'],
+  YARIS: ['YARIS'],
+  HILUX: ['HILUX'],
+  CHR: ['C-HR','C HR','CHR'],
+  RUSH: ['RUSH']
+}
+;
+const toyModelLabels = {
+  COROLLA:'Corolla', CAMRY:'Camry', RAV4:'RAV4', YARIS:'Yaris', HILUX:'Hilux',
+  PRADO:'Land Cruiser Prado', LANDCRUISER:'Land Cruiser', FJCRUISER:'FJ Cruiser',
+  FORTUNER:'Fortuner', HIGHLANDER:'Highlander', '4RUNNER':'4Runner',
+  LANDCRUISERPICKUP:'Land Cruiser Pickup', AVALON:'Avalon', CHR:'C-HR',
+  COROLLACROSS:'Corolla Cross', RUSH:'Rush'
+}
+;
+let toyHistoryList = loadHistory("toyota");
+function toyNormalize(text) {
+  return text.trim().replace(/\s+|-/g,'').toUpperCase();
+}
+function toyDetectModel(userInput) {
+  const normalized = toyNormalize(userInput);
+  const pairs = [];
+  for (const key in toyotaModelAliases) {
+    for (const alias of toyotaModelAliases[key]) pairs.push([toyNormalize(alias), key]);
+  }
+  pairs.sort((a, b) => b[0].length - a[0].length);
+  for (const [aliasNorm, key] of pairs) {
+    if (normalized.includes(aliasNorm)) return key;
+  }
+  return null;
+}
+function toyClearInputs() {
+  document.getElementById('toy-modelInput').value = '';
+  document.getElementById('toy-yearInput').value = '';
+  document.getElementById('toy-modelInput').focus();
+}
+function toyCheckPrice() {
+  const rawModel = document.getElementById('toy-modelInput').value.trim();
+  const yearRaw = document.getElementById('toy-yearInput').value.trim();
+  const outputDiv = document.getElementById('toy-output');
+  if (!rawModel) {
+    outputDiv.innerHTML = "<span class='error'>Please enter a model.</span>";
+    toyClearInputs();
+    return;
+  }
+  const modelKey = toyDetectModel(rawModel);
+  if (!modelKey) {
+    outputDiv.innerHTML = "<span class='error'>Model not recognized. Try Corolla, Corolla Cross, Camry, Avalon, RAV4, C-HR, Rush, Yaris, Hilux, Prado, Land Cruiser, Land Cruiser Pickup, FJ Cruiser, Fortuner, Highlander, or 4Runner.</span>";
+    toyClearInputs();
+    return;
+  }
+  const year = yearRaw ? parseInt(yearRaw) : null;
+  if (yearRaw && isNaN(year)) {
+    outputDiv.innerHTML = "<span class='error'>Please enter a valid year.</span>";
+    toyClearInputs();
+    return;
+  }
+  let results = [];
+  for (const yr in toyotaCarPrices[modelKey]) {
+    if (year && parseInt(yr) !== year) continue;
+    results.push(makePriceCards(`${toyModelLabels[modelKey]} ${yr}`, toyotaCarPrices[modelKey][yr]));
+  }
+  if (results.length) {
+    outputDiv.innerHTML = results.join('<hr>');
+    toyHistoryList.unshift(...results);
+    saveHistory("toyota", toyHistoryList);
+    toyRenderHistory();
+  }
+  else {
+    outputDiv.innerHTML = "<span class='error'>No matching model/year found.</span>";
+  }
+  toyClearInputs();
+}
+function toyRenderHistory() {
+  const historyDiv = document.getElementById('toy-historyList');
+  historyDiv.innerHTML = '';
+  toyHistoryList.forEach(item => historyDiv.innerHTML += `<div class='history-item'>${item}</div>`);
+}
+function toyClearHistory() {
+  toyHistoryList = [];
+  clearSavedHistory("toyota");
+  document.getElementById('toy-historyList').innerHTML = '';
+  document.getElementById('toy-output').innerHTML = "<span class='success'>History cleared.</span>";
+}
+function toyToggleHistory() {
+  const historyDiv = document.getElementById('toy-history');
+  const btn = document.getElementById('toy-historyToggleBtn');
+  if (historyDiv.style.display === 'none' || historyDiv.style.display === '') {
+    historyDiv.style.display = 'block';
+    btn.textContent = 'Hide History';
+    toyRenderHistory();
+  }
+  else {
+    historyDiv.style.display = 'none';
+    btn.textContent = 'Show History';
+  }
+}
+document.getElementById('toy-modelInput').addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    document.getElementById('toy-yearInput').focus();
+  }
+}
+);
+document.getElementById('toy-yearInput').addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    toyCheckPrice();
+  }
+}
+);
+/* ===================== AI ADVISOR ===================== */
+// ⚠️ SETUP REQUIRED: point this at your own backend proxy (see
+// advisor-server-example.js). Browsers can't call the Anthropic API
+// directly with a secret key, so this must hit a small server you control.
+const ADVISOR_API_ENDPOINT = 'https://your-backend.example.com/api/advisor-chat';
+// Builds a compact "MODEL: $min–$max" summary per brand straight from the
+// price tables already in this file, so the advisor only ever recommends
+// cars that are actually in the pricing database — and never goes stale,
+// since it's generated from the same data the pricing tool uses.
+function summarizeBrandCatalog(carPrices) {
+  const groups = {
+  }
+  ;
+  for (const modelKey in carPrices) {
+    const displayKey = modelKey.replace(/\d{4}$/, '');
+    // e.g. HONDACIVIC2018 -> HONDACIVIC
+    let min = Infinity, max = -Infinity;
+    (function walk(node) {
+      if (typeof node === 'number') {
+        if (node < min) min = node;
+        if (node > max) max = node;
+      }
+      else if (node && typeof node === 'object') {
+        for (const k in node) walk(node[k]);
+      }
+    }
+    )(carPrices[modelKey]);
+    if (!isFinite(min)) continue;
+    if (!groups[displayKey]) groups[displayKey] = {
+      min, max
+    }
+    ;
+    else {
+      groups[displayKey].min = Math.min(groups[displayKey].min, min);
+      groups[displayKey].max = Math.max(groups[displayKey].max, max);
+    }
+  }
+  return Object.entries(groups).map(([k, v]) => `${k}: $${v.min.toLocaleString()}–$${v.max.toLocaleString()}`);
+}
+function buildAdvisorCatalog() {
+  const brands = {
+    BMW: bmwCarPrices, Honda: hondaCarPrices, 'Mercedes-Benz': mercCarPrices,
+    'Range Rover': rrCarPrices, Hyundai: hyundaiCarPrices, Toyota: toyotaCarPrices
+  }
+  ;
+  let out = '';
+  for (const brand in brands) {
+    out += `\n${brand}:\n` + summarizeBrandCatalog(brands[brand]).map(l => '- ' + l).join('\n') + '\n';
+  }
+  return out;
+}
+function buildAdvisorSystemPrompt() {
+  return `You are the Adnan Auto Advisor, a friendly and knowledgeable car-buying assistant for a Lebanon-based used-car pricing service. All prices are in USD, Lebanon market.
+
+Your job: help the customer land on 2-3 specific cars (brand + model, roughly which year/trim) that fit their budget, how they'll use the car (family/city/off-road/business/etc.), and what they care about most (fuel economy, resale value, reliability, performance, luxury).
+
+Guidelines:
+- If budget, usage, or priorities are missing, ask one short clarifying question — don't interrogate. If the customer has given enough to work with, go ahead and recommend.
+- Only recommend models that appear in the CATALOG below — these are the only ones this dealer actually prices. Reference an approximate price range from the catalog for each pick.
+- Keep replies conversational and concise: a sentence or two of framing, then a short list of 2-3 options with a one-line reason each.
+- If asked something unrelated to cars or pricing, politely steer back.
+
+CATALOG (model: price range across all years/trims we have priced):
+${buildAdvisorCatalog()}`;
+}
+const ADVISOR_SYSTEM_PROMPT = buildAdvisorSystemPrompt();
+let advisorMessages = [];
+function advisorLoadHistory() {
+  try {
+    const raw = localStorage.getItem('adnan_advisor_history');
+    return raw ? JSON.parse(raw) : [];
+  }
+  catch (e) {
+    return [];
+  }
+}
+function advisorSaveHistory() {
+  try {
+    localStorage.setItem('adnan_advisor_history', JSON.stringify(advisorMessages.slice(-30)));
+  }
+  catch (e) {
+  }
+}
+function advisorAddBubble(role, text) {
+  const wrap = document.getElementById('advisor-messages');
+  const bubble = document.createElement('div');
+  bubble.className = 'chat-bubble ' + (role === 'user' ? 'user' : 'bot');
+  bubble.textContent = text;
+  wrap.appendChild(bubble);
+  wrap.scrollTop = wrap.scrollHeight;
+}
+function advisorShowTyping() {
+  const wrap = document.getElementById('advisor-messages');
+  const bubble = document.createElement('div');
+  bubble.className = 'chat-bubble typing';
+  bubble.id = 'advisor-typing';
+  bubble.innerHTML = '<span></span><span></span><span></span>';
+  wrap.appendChild(bubble);
+  wrap.scrollTop = wrap.scrollHeight;
+}
+function advisorHideTyping() {
+  const el = document.getElementById('advisor-typing');
+  if (el) el.remove();
+}
+function advisorSend(prefilled) {
+  const inputEl = document.getElementById('advisor-input');
+  const text = (typeof prefilled === 'string' ? prefilled : inputEl.value).trim();
+  if (!text) return;
+  advisorAddBubble('user', text);
+  advisorMessages.push( {
+    role: 'user', content: text
+  }
+  );
+  advisorSaveHistory();
+  inputEl.value = '';
+  const sendBtn = document.getElementById('advisor-send-btn');
+  sendBtn.disabled = true;
+  advisorShowTyping();
+  if (!ADVISOR_API_ENDPOINT || ADVISOR_API_ENDPOINT.includes('your-backend.example.com')) {
+    advisorHideTyping();
+    document.getElementById('advisor-setup-note').style.display = 'block';
+    advisorAddBubble('bot', "I'm not connected to a live backend yet — once ADVISOR_API_ENDPOINT is pointed at a deployed server (see advisor-server-example.js), I'll be able to chat for real.");
+    sendBtn.disabled = false;
+    return;
+  }
+  fetch(ADVISOR_API_ENDPOINT, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+    ,
+    body: JSON.stringify( {
+      system: ADVISOR_SYSTEM_PROMPT, messages: advisorMessages
+    }
+    )
+  }
+  )
+  .then(r => {
+    if (!r.ok) throw new Error('Request failed (' + r.status + ')');
+    return r.json();
+  }
+  )
+  .then(data => {
+    advisorHideTyping();
+    const replyText = data.reply || data.text ||
+    (data.content && data.content[0] && data.content[0].text) ||
+    "Sorry, I didn't get a usable response — please try again.";
+    advisorAddBubble('bot', replyText);
+    advisorMessages.push( {
+      role: 'assistant', content: replyText
+    }
+    );
+    advisorSaveHistory();
+  }
+  )
+  .catch(err => {
+    advisorHideTyping();
+    advisorAddBubble('bot', "Couldn't reach the Advisor's backend (" + err.message + "). Please try again in a moment.");
+  }
+  )
+  .finally(() => {
+    sendBtn.disabled = false;
+  }
+  );
+}
+// Restore prior conversation (if any) or show a greeting.
+(function advisorInit() {
+  advisorMessages = advisorLoadHistory();
+  if (advisorMessages.length) {
+    advisorMessages.forEach(m => advisorAddBubble(m.role === 'user' ? 'user' : 'bot', m.content));
+  }
+  else {
+    advisorAddBubble('bot', "Hi! I'm the Adnan Auto Advisor. Tell me your budget, how you'll mainly use the car, and what matters most to you — and I'll suggest a few good fits from our pricing database.");
+  }
+}
+)();
+document.getElementById('advisor-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    advisorSend();
+  }
+}
+);
+document.getElementById('advisor-input').addEventListener('input', function () {
+  this.style.height = 'auto';
+  this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+}
+);
+/* --- Floating widget open/close + first-visit nudge --- */
+let advisorWidgetOpen = false;
+function advisorToggleWidget(forceOpen) {
+  const popup = document.getElementById('advisor-popup');
+  const shouldOpen = typeof forceOpen === 'boolean' ? forceOpen : !advisorWidgetOpen;
+  advisorWidgetOpen = shouldOpen;
+  popup.style.display = shouldOpen ? 'flex' : 'none';
+  document.getElementById('advisor-fab-icon').textContent = shouldOpen ? '✕' : '🤖';
+  const badge = document.getElementById('advisor-fab-badge');
+  if (shouldOpen && badge) {
+    badge.remove();
+  }
+  advisorDismissTooltip();
+  if (shouldOpen) {
+    const msgs = document.getElementById('advisor-messages');
+    msgs.scrollTop = msgs.scrollHeight;
+    document.getElementById('advisor-input').focus();
+  }
+}
+function advisorDismissTooltip() {
+  const tip = document.getElementById('advisor-tooltip');
+  if (tip) tip.remove();
+}
+// Nudge first-time visitors toward the bot a few seconds after load, once,
+// without being pushy on repeat visits.
+(function advisorTooltipNudge() {
+  let alreadySeen = false;
+  try {
+    alreadySeen = localStorage.getItem('adnan_advisor_tooltip_seen') === '1';
+  }
+  catch (e) {
+  }
+  if (alreadySeen) return;
+  setTimeout(() => {
+    if (advisorWidgetOpen || document.getElementById('advisor-tooltip')) return;
+    const tip = document.createElement('div');
+    tip.className = 'advisor-tooltip';
+    tip.id = 'advisor-tooltip';
+    tip.innerHTML = "Not sure which car fits you? Ask me — I can help you choose 👋<button aria-label='Dismiss'>✕</button>";
+    tip.querySelector('button').onclick = (e) => {
+      e.stopPropagation();
+      advisorDismissTooltip();
+    }
+    ;
+    tip.onclick = () => advisorToggleWidget(true);
+    document.body.appendChild(tip);
+    try {
+      localStorage.setItem('adnan_advisor_tooltip_seen', '1');
+    }
+    catch (e) {
+    }
+    setTimeout(advisorDismissTooltip, 9000);
+  }
+  , 3500);
+}
+)();</script>
+</body>
+</html>
